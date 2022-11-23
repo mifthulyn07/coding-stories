@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int x=10;//variabel global
+
+int ambil_global(){//menggambil variabel global
+return x;
+}
+
+int x_local(){//varibel local scope nya x_local()
+x=5;
+return x;
+}
+
+int main()
+{
+    cout<<"variabel global: "<<x<<endl;
+    int x=8;//variabel local scopenya main()
+    cout<<"variabel local main: "<<x<<endl;
+    cout<<"variabel global: "<<ambil_global()<<endl;
+    cout<<"variabel local x: "<<x_local()<<endl;
+    {
+        int x=1;//block scope
+        cout<<"variabel block: "<<x<<endl;
+    }
+    return 0;
+}

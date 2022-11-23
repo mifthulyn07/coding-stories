@@ -1,0 +1,19 @@
+package mifthulyn07;//selalu huruf kecil
+import java.util.*;
+public class Mifthulyn07 {//nama yang asli
+    public static void main(String[] args){
+        Scanner UserInput = new Scanner(System.in);
+        int jlh = 0, a, i;
+        System.out.print("masukkan angka terahir untuk pertambahan angka: ");
+        a = UserInput.nextInt();
+        for (i=1; i<=a; i++){
+            System.out.print(i);
+            jlh = jlh + i;
+            if(i<a){
+                System.out.print(" + ");
+            }
+        }
+        System.out.println("\njumlahnya adalah: "+ jlh);
+    }
+   
+}

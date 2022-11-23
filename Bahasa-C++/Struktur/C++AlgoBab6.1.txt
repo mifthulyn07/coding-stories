@@ -1,0 +1,141 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout<<"========================"<<endl;
+	cout<<"MENGHITUNG GAJI KARYAWAN"<<endl;
+	cout<<"========================"<<endl;
+	int gaji_pokok, tunjangan, pajak, gaji_bersih;
+	cout<<"masukkan gaji pokok: ";cin>>gaji_pokok;
+	tunjangan=gaji_pokok*20/100;
+	pajak=gaji_pokok*15/100;
+	gaji_bersih = gaji_pokok + tunjangan - pajak;
+	cout<<"jumlah gaji bersih karyawan: "<<gaji_bersih;
+	cout<<endl;
+	cout<<"========================================="<<endl;
+	cout<<"MENGHITUNG TITIK TENGAH DARI 2 BUAH TITIK"<<endl;
+	cout<<"========================================="<<endl;
+	float x1, x2, x3, y1, y2, y3;
+	cout<<"masukkan titik per 1"<<endl;
+	cout<<"masukkan x1: ";cin>>x1;
+	cout<<"masukkan y1: ";cin>>y1;
+	cout<<endl;
+	cout<<"masukkan titik ke 2"<<endl;
+	cout<<"masukkan x2: ";cin>>x2;
+	cout<<"masukkan y2: ";cin>>y2;
+	x3=(x1+x2)/2;
+	y3=(y1+y2)/2;
+	cout<<"titik tengah adalah ("<<x3<<","<<y3<<")";
+	cout<<endl;
+	cout<<"======================="<<endl;
+    cout<<"KONVERSI WAKTU KE DETIK"<<endl;
+    cout<<"======================="<<endl;
+    int h, m, s, menit, detik, jam, ttl;
+    cout<<"masukkan jam: ";cin>>h;
+    cout<<"masukkan menit: ";cin>>m;
+    cout<<"masukkan detik: ";cin>>s;
+    menit=m*60;
+    jam=h*3600;
+    ttl=s+menit+jam;
+    cout<<"jumlah detik: "<<ttl;
+    cout<<endl;
+    cout<<"==================================="<<endl;
+    cout<<"KONVERSI WAKTU KE JAM, MENIT, DETIK"<<endl;
+    cout<<"==================================="<<endl;
+    int ss, hh, n, mm, detikk;
+    cout<<"masukkan jumlah detik: ";cin>>ss;
+    hh = ss / 3600;
+   	n = ss %  3600;
+    mm = n / 60;
+    detikk = n % 60;
+    cout<<"total waktu"<<endl;
+   	cout<<"["<<hh<<" : "<<mm<<" : "<<detikk<<"]";
+    cout<<endl;
+    cout<<"================="<<endl;
+    cout<<"MENGHITUNG DURASI"<<endl;
+    cout<<"================="<<endl;
+    int h1, h2, m1, m2, s1, s2, menit1, menit2, jam1, jam2, ttl1, ttl2, jumlah_detik, durasi_menit, durasi_jam, durasi_detik, sisa;
+    cout<<"masukkan waktu awal"<<endl;
+    cout<<"jam: ";cin>>h1;
+    cout<<"menit: ";cin>>m1;
+    cout<<"detik: ";cin>>s1;
+    menit1=m1*60;
+    jam1=h1*3600;
+    ttl1=s1+menit1+jam1;
+    cout<<endl;
+    cout<<"masukkan waktu akhir"<<endl;
+    cout<<"jam: ";cin>>h2;
+    cout<<"menit: ";cin>>m2;
+    cout<<"detik: ";cin>>s2;
+    menit2=m2*60;
+    jam2=h2*3600;
+    ttl2=s2+menit2+jam2;
+    jumlah_detik=ttl2-ttl1;
+    durasi_jam = jumlah_detik / 3600;
+    sisa = jumlah_detik %  3600;
+    durasi_menit = sisa / 60;
+    durasi_detik = sisa % 60;
+    cout<<endl;
+    cout<<"durasi waktu"<<endl;
+    cout<<"["<<durasi_jam<<" : "<<durasi_menit<<" : "<<durasi_detik<<"]";
+    cout<<endl;
+	cout<<"=============================="<<endl;
+	cout<<"JAM BERIKUTNYA SETELAH P MENIT"<<endl;
+    cout<<"=============================="<<endl;
+    int jamA, menitA, detikA, jamB, menitB, detikB, menitC, hhh, mmm, total, hasil, kembalian, mmmm;
+    cout<<"masukkan waktu"<<endl;
+    cout<<"jam: ";cin>>jamA;
+    cout<<"menit: ";cin>>menitA;
+    cout<<"detik: ";cin>>detikA;
+    hhh=jamA*3600;
+    mmm=menitA*60;
+    total=hhh+mmm+detikA;
+    cout<<"masukkan pertambahan menit: ";cin>>menitC;
+    mmmm=menitC*60;
+    hasil=total+mmmm;
+    jamB=hasil/3600;
+    kembalian=hasil%3600;
+    menitB=kembalian/60;
+    detikB=kembalian%60;
+    cout<<"waktu setelah P menit adalah: "<<endl;
+    cout<<"[ "<<jamB<<" : "<<menitB<<" : "<<detikB<<" ]";
+	cout<<endl;
+	cout<<"=================="<<endl;
+	cout<<"ARITMATIKA PECAHAN"<<endl;
+	cout<<"=================="<<endl;
+	int p1A, p2A, p1B, p2B, kali1, kali2, bagi1, bagi2, tambah1, tambah2, kurang1, kurang2;
+	char aritmatika;
+	cout<<"masukkan pembilang dan penyebut1"<<endl;
+	cout<<"pembilang1: ";cin>>p1A;
+	cout<<"penyebut1: ";cin>>p1B;
+	cout<<endl;
+	cout<<"masukkan x, /, +, -: ";cin>>aritmatika;
+	cout<<endl;
+	cout<<"masukkan pembilang dan penyebut2"<<endl;
+	cout<<"pembilang2: ";cin>>p2A;
+	cout<<"penyebut2: ";cin>>p2B;
+	cout<<endl;
+	cout<<"hasilnya adalah: "<<endl;
+	if(aritmatika == 'x'){
+        kali1=p1A*p2B;
+        kali2=p1B*p2B;
+        cout<<kali1<<"/"<<kali2<<" = "<<kali1/kali2;
+	}
+	else if(aritmatika == '/'){
+        bagi1=p1A*p2B;
+        bagi2=p1B*p1B;
+        cout<<bagi1<<"/"<<bagi2<<" = "<<bagi1/bagi2;
+	}
+	else if(aritmatika == '+'){
+        tambah1=(p1A*p2B)+(p2A*p1B);
+        tambah2=(p1B*p2B);
+        cout<<tambah1<<"/"<<tambah2<<" = "<<tambah1/tambah2;
+	}
+	else if(aritmatika == '-'){
+        kurang1=(p1A*p2B)+(p2A*p1B);
+        kurang2=(p1B*p2B);
+        cout<<kurang1<<"/"<<kurang2<<" = "<<kurang1/kurang2;
+	}
+    return 0;
+}
+

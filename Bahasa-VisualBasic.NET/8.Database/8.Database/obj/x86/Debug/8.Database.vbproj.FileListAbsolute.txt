@@ -1,0 +1,13 @@
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\_8.Database.Form1.resources
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\_8.Database.Resources.resources
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.vbproj.GenerateResource.Cache
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\bin\Debug\8.Database.exe
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\bin\Debug\8.Database.pdb
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\bin\Debug\8.Database.xml
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.exe
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.xml
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.pdb
+D:\Program\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\_8.Database._2_MiftahulUlyanaHutabarat.resources
+D:\Programming\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.exe
+D:\Programming\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.xml
+D:\Programming\percobaan\CobaVisualStudio\8.Database\8.Database\obj\x86\Debug\8.Database.pdb

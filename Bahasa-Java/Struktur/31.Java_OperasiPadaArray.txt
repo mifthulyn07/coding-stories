@@ -1,0 +1,131 @@
+package javaapplication12;
+import java.util.Arrays;//bisa Array/* 
+public class JavaApplication12 {
+    public static void main(String[] args) {
+        int[] ArrayAngka1 = {1,2,3,4,5};
+       
+        //merubah array menjadi string
+        System.out.println("=====MERUBAH ARRAY MENJADI STRING");
+        PrintArray(ArrayAngka1);
+        
+        //mengcopy array menjadi string
+        System.out.println("\n=====MENGCOPY ARRAY");
+        int[] ArrayAngka2;
+        ArrayAngka2 = new int[5];
+        PrintArray(ArrayAngka1);
+        PrintArray(ArrayAngka2);
+        
+        System.out.println("\n1. mengcopy dengan loop");
+        //agar beda adress menggunakan loop, jika tidak menggunakan loop maka adressnya akan sama
+        for(int i = 0; i < ArrayAngka1.length; i++){
+            ArrayAngka2[i] = ArrayAngka1[i];
+        }
+        PrintArray(ArrayAngka1);
+        System.out.println(ArrayAngka1);//melihat alamat
+        PrintArray(ArrayAngka2);
+        System.out.println(ArrayAngka2);//melihat alamat
+        
+        System.out.println("\n2. mengcopy dengan copyOf");
+        int [] ArrayAngka3;
+        ArrayAngka3 = Arrays.copyOf(ArrayAngka1, 3);//3 agar 3 index(0,1,2) yang mengcopy
+        PrintArray(ArrayAngka1);
+        PrintArray(ArrayAngka3);
+        
+        
+//        System.out.println("\n3. mengcopy dengan copyOfRange");
+//        netbeans 8.2 tidak support jdk 9++ jadi ga support copyOfRange
+//        int [] ArrayAngka4;
+//        ArrayAngka4 = Arrays.copyOfRange(ArrayAngka1, from: 3,to: 5);//mengcopy dari 3 ke 5 index(2,3,4) yang mengcopy
+//        PrintArray(ArrayAngka1);
+//        PrintArray(ArrayAngka3);
+
+        System.out.println("\n=====FILL ARRAY");
+        int[] ArrayAngka5;
+        ArrayAngka5 = new int[10];
+        PrintArray(ArrayAngka5);
+        Arrays.fill(ArrayAngka5, 2);//yang diisikan ke array angka 2
+        PrintArray(ArrayAngka5);
+        
+        System.out.println("\n=====EQUALS ARRAY ATAU MEMBANDINGKAN 2 BUAH ARRAY");
+        int[] ArrayAngka6 = {6,7,8,9,0};
+        int[] ArrayAngka7 = {6,7,8,2,0};
+        System.out.println(Arrays.equals(ArrayAngka6, ArrayAngka7));//begini cara yang menar mengcompare
+        if(ArrayAngka6 == ArrayAngka7){//tidak direkomendasikan
+            System.out.println("Array ini sama");
+        }else{
+            System.out.println("Array ini beda, padalan isinya sama(tidak recomended)");
+        }
+        
+//        System.out.println("=====MENGCOMPARE ARRAY");//mengecek mana array yang lebih besar
+//        netbeans 8.2 tidak support jdk 9++ jadi ga support sama fungsi compare dan mismatch
+//        System.out.println(Arrays.compare(ArrayAngka6, ArrayAngka7));
+//        jika hasilnya 0=dua duanya sama hasilnya 1=arrayAngka6 lebih besar jika hasilnya -1=ArrayAngka7 yang lebih besar 
+        
+//        System.out.println("=====MISMATCH ARRAY");//mengecek mana indeks yang berbed
+//        netbeans 8.2 tidak support jdk 9++ jadi ga support sama fungsi compare dan mismatch
+//        System.out.println(Arrays.mismatch(ArraAngka6, ArrayAngka7));
+//        jika hasilnya -1 berarti gak ada yang beda, karna indeks -1 gak ada, jika hasilnya 0 maka indeks 0 yang beda, jika hasilnya 1 maka indeks 1 yang beda
+
+        System.out.println("\n=====SORT ARRAY");//diurutkan dari yang terkecil ke yang terbesar
+        int[] ArrayAngka8 = {1,5,7,3,4,5};
+        Arrays.sort(ArrayAngka8);
+        PrintArray(ArrayAngka8);//harus di sort dulu baru bisa di search
+
+        System.out.println("\n=====SEARCH ARRAY");
+        PrintArray(ArrayAngka8);
+        int angka = 3;
+        int posisi = Arrays.binarySearch(ArrayAngka8,angka);
+        System.out.println("angka " + angka + " ada di index " + posisi);
+        
+        System.out.println("\n=====SORT ARRAY DARI YANG TERBESAR");
+        int[] ArrayAngka9 = {5,2,3,7,5,8,4};
+        for (int i = 0; i < ArrayAngka9.length - 1; i++) {
+            int min_index = i;
+            for (int j = i + 1; j < ArrayAngka9.length; j++) {
+                if (ArrayAngka9[j] > ArrayAngka9[min_index]){
+                    min_index = j;
+                }
+            }
+            int temp = ArrayAngka9[min_index];
+            ArrayAngka9[min_index] = ArrayAngka9[i];
+            ArrayAngka9[i] = temp;
+        }
+        PrintArray(ArrayAngka9);
+        
+        
+        System.out.println("\n===== MENGGABUNGKN ARRAY");
+        int[] ArrayAngka10 = {4,3,7,8,9,2};
+        int[] ArrayAngka11 = {5,4,6,7,4,3};
+        int panjangArray = ArrayAngka10.length + ArrayAngka11.length;
+        int gabungArray[];
+        gabungArray = new int[panjangArray];
+        int x=0;
+        for (int i=0; i<ArrayAngka10.length; i++){
+            gabungArray[x]=ArrayAngka10[i];
+            x++;
+        }
+        for (int i=0; i<ArrayAngka11.length;i++){
+            gabungArray[x]=ArrayAngka11[i];
+            x++;
+        }
+        PrintArray(gabungArray);
+        
+        System.out.println("\n=====PEJUMLAHAN ARRAY");
+        int panjang_Array;
+        //= ArrayAnkga10.length < ArrayAngka11.length ? ArrayAngka10.length : ArrayAngka11.length;
+        if (ArrayAngka10.length<ArrayAngka11.length){
+            panjang_Array = ArrayAngka10.length;
+        }else {
+            panjang_Array = ArrayAngka11.length;
+        }
+        int[] result = new int[panjang_Array];
+        for (int i = 0; i < panjang_Array; i++) {
+            result[i] = ArrayAngka10[i] + ArrayAngka11[i];
+        }
+        PrintArray(result);
+    }
+    
+    public static void PrintArray(int[] DataArray){
+        System.out.println("Array: " + Arrays.toString(DataArray));
+    }
+}

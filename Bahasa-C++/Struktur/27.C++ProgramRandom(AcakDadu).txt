@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>//mengandung fungsi random
+using namespace std;
+int main()
+{
+    for(int  i=0; i<10; i++){//cara dasar membuat random
+        cout << 1 + (rand()%6) << endl;//+1 agar dia tidak ada angka 0(dadu)
+    }
+
+    char pilihan;
+    while(true){
+        cout<<"lempar dadu? (y/n): ";cin>>pilihan;
+        if(pilihan == 'y'){
+            cout << 1 + (rand()%6) << endl;
+        }else if(pilihan == 'n'){
+            break;
+        }else{
+            cout<<"warning: tidak ada pilihan '"<<pilihan<<"'"<<endl;
+        }
+    }
+
+
+    cin.get();
+    return 0;
+}

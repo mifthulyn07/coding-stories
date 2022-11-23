@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int a = 5, b;
+    string hasil1 = "ucup", hasil2 = "otong", output;
+
+    cout<<"masukkan nilai: ";cin>>b;
+    output = (a<b) ? hasil1 : hasil2;//sama seperti if else, jika benar akan masuk ke hasil 1
+    cout<<output<<endl;
+    return 0;
+}

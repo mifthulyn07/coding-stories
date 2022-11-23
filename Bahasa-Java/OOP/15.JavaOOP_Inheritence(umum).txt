@@ -1,0 +1,24 @@
+//inheritance adalah turunan...
+package Mifthulyn07;
+//inheritance adalah hubungan is-a
+class Hero{//parent class, super class
+    String name;
+    
+    //method
+    void display(){
+        System.out.println("Name: " + this.name);
+    }
+}
+class HeroStrength extends Hero{//sub class, child class
+    //hampa
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        Hero hero1 = new Hero();
+        hero1.name = "Miftah";
+        hero1.display();
+        
+        HeroStrength hero2 = new HeroStrength();
+        hero2.name = "Nurli";
+        hero2.display();
+    }}

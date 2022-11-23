@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+enum warna{merah, kuning, hijau, biru, ungu, putih};
+
+int main()
+{
+    warna kain;
+    kain = ungu;
+    if(kain == ungu){
+        cout<<"warna kain hitam"<<endl;
+    }
+    cout<<kain<<endl;
+    return 0;
+}

@@ -1,0 +1,84 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main()
+{
+    ofstream fileku;//membuat file txt dulu
+
+    fileku.open("dataone.txt", ios::out);
+    fileku<<"ini adalah file eksternal."<<endl;
+    fileku<<"dan ini adalah baris ke dua."<<endl<<endl;
+    fileku<<"data"<<endl;
+    fileku<<"no\t nama"<<endl;
+    fileku<<"1.\t miftahul"<<endl;
+    fileku<<"2.\t ulyana"<<endl;
+    fileku<<"3.\t hutabarat"<<endl;
+    fileku.close(); 
+    return 0;
+}
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main()
+{
+    ifstream fileku;
+    string dataone;
+
+    fileku.open("dataone.txt");
+
+    fileku>>dataone;//mengambil 1 kata di dataone(tidak bisa dilakukan bersama sama dengan baris lain)
+    getline(fileku, dataone);//mengambil hanya baris 1 di dataone(tidak bisa dilakukan bersama sama dengan baris lain)
+    getline(fileku, dataone);//mengambil baris hanya 2 di dataone tetapi baris 1 nya hilang(tidak bisa dilakukan bersama sama dengan baris lain)
+    cout<<dataone<<endl<<endl;
+    return 0;
+}
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main()
+{
+    ifstream fileku;//syarat membaca dataone
+    string dataone, buffer;//mengambil dataone menggunakan string
+    bool data = false;
+
+    fileku.open("dataone.txt");//membuka dataone
+
+    getline(fileku, buffer);//getline(cin, variabel)= dasar getline di string
+    dataone.append(buffer);//menampilkan 1 baris text
+    getline(fileku, buffer);
+    dataone.append("\n"+buffer);
+    cout<<dataone<<endl;
+    return 0;
+}
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main()
+{
+    ifstream fileku;//syarat membaca dataone
+    string dataone, buffer;//mengambil dataone menggunakan string(dataone harus diganti dengan output)/**<  */
+    bool data = false;
+
+    fileku.open("dataone.txt");//membuka file yang sudah ada
+
+    while(!data){//artian true
+        getline(fileku, buffer);
+        dataone.append("\n" + buffer);
+        if(buffer == "dataone"){
+            data = true;
+        }
+    }
+    cout<<dataone<<endl;
+    return 0;
+}
+
+
+
+
+

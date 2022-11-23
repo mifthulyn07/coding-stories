@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int angka,i,hasil,nilai;
+    cout<<"menghitung faktorial dari: ";cin>>angka;
+    hasil=1;
+    for(i=angka; i>=1; i--){
+    	hasil=hasil*i;
+	}
+	cout<<"nilai faktorialnya adalah: "<<hasil<<endl;
+    nilai=1;
+    for(i=1; i<=angka; i++){
+    	nilai=nilai*i;
+	}
+	cout<<"nilai faktorialnya adalah: "<<nilai<<endl;
+    return 0;
+}
+ 

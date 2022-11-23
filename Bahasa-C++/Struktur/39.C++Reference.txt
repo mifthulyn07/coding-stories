@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a=5;
+    cout << "adress dari a: " << &a << endl;
+    cout << "nilai dari a: " << a << endl << endl;
+
+    int &b = a;//reference adalah menaruh nilai b ke alamat a
+    cout << "adress dari b: " << &b << endl;
+    cout << "nilai dari b: " << b << endl << endl;
+
+    //mencoba mengubah nilai b
+    b = 10;
+    cout << "nilai dari a: " << a << endl;
+    cout << "nilai dari b: " << b << endl;
+
+    return 0;
+}

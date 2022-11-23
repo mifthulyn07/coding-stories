@@ -1,0 +1,389 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"==========="<<endl;
+    cout<<"GANJIL GENAP"<<endl;
+    cout<<"==========="<<endl;
+    int angka;
+    cout<<"masukkan angka: ";cin>>angka;
+    cout<<endl;
+    if(angka%2==0){
+        cout<<"ANGKA INI GENAP";
+    }
+    else{
+        cout<<"ANGKA INI GANJIL";
+    }
+    cout<<endl;
+    cout<<"====================="<<endl;
+    cout<<"HURUF VOCAL DAN HIDUP"<<endl;
+    cout<<"====================="<<endl;
+    char huruf;
+    cout<<"masukkan huruf: ";cin>>huruf;
+    cout<<endl;
+    if(huruf == 'a', 'i', 'u', 'e', 'o', 'A', 'I', 'U', 'E', 'O'){
+        cout<<"INI HURUF VOCAL"<<endl;
+    }
+    else{
+        cout<<"ANGKA INI HIDUP"<<endl;
+    }
+       cout<<endl;
+    cout<<"============"<<endl;
+    cout<<"NILAI MUTLAK"<<endl;
+    cout<<"============"<<endl;
+    int a;
+    cout<<"masukkan angka: ";cin>>a;
+    cout<<endl;
+    if(a<0){
+        cout<<"hasilnya adalah "<<-(a)<<endl;
+    }
+    else{
+        cout<<"hasilnya adalah "<<a<<endl;
+    }
+    cout<<endl;
+    cout<<"========================================="<<endl;
+    cout<<"MEMILIH 2 BILANGAN BULAT YANG LEBIH BESAR"<<endl;
+    cout<<"========================================="<<endl;
+    int a, b;
+    cout<<"masukkan bilangan bulat per 1: ";cin>>a;
+    cout<<"masukkan bilangan bulat ke 2: ";cin>>b;
+    if(a<b){
+        cout<<"bilangan yang terbesar adalah: "<<b<<endl;
+    }
+    else if(b<a){
+        cout<<"bilangan yang terbesar adalah: "<<a<<endl;
+    }
+    cout<<endl;
+    cout<<"==============================="<<endl;
+    cout<<"JUMLAH JAM KERJA SELAMA 1 MINGGU"<<endl;
+    cout<<"==============================="<<endl;
+    int jam, gaji, n;
+    cout<<"masukkan jumlah jam selama 1 minggu: ";cin>>jam;
+    if(jam>48){
+        n=jam%48;
+        gaji=(48*2000)+(n*3000);
+    }
+    else{
+        gaji=jam*2000;
+    }
+    cout<<"maka gajinya adalah: "<<gaji;
+    cout<<endl;
+    cout<<"========================"<<endl;
+    cout<<"MENENTUKAN TAHUN KABISAT"<<endl;
+    cout<<"========================"<<endl;
+    int tahun;
+    cout<<"masukkan tahun: ";cin>>tahun;
+    cout<<endl;
+    if(tahun%4==0){
+        cout<<"INI ADALAH TAHUN KABISAT"<<endl;
+    }
+    else{
+        cout<<"INI BUKAN TAHUN KABISAT"<<endl;
+    }
+        cout<<endl;
+    cout<<"============================================="<<endl;
+    cout<<"MENENTUKAN BILANGAN POSITIF, NEGATIF, DAN NOL"<<endl;
+    cout<<"============================================="<<endl;
+    int b;
+    cout<<"masukkan angka: ";cin>>b;
+    cout<<endl;
+    if(b<0){
+        cout<<"INI ADALAH BILANGAN NEGATIF"<<endl;
+    }
+    else if(b>0){
+        cout<<"INI ADALAH BILANGAN POSITIF"<<endl;
+    }
+    else{
+        cout<<"INI ADALAH NILAI NOL"<<endl;
+    }
+    cout<<endl;
+    cout<<"============================================="<<endl;
+    cout<<"MENENTUKAN BILANGAN POSITIF, NEGATIF, DAN NOL"<<endl;
+    cout<<"============================================="<<endl;
+    int b;
+    cout<<"masukkan angka: ";cin>>b;
+    cout<<endl;
+    if(b<0){
+        cout<<"INI ADALAH BILANGAN NEGATIF"<<endl;
+    }
+    else if(b>0){
+        cout<<"INI ADALAH BILANGAN POSITIF"<<endl;
+    }
+    else{
+        cout<<"INI ADALAH NILAI NOL"<<endl;
+    }
+    cout<<"========================================="<<endl;
+    cout<<"MENGHITUNG UPAH KARIAWAN MENURUT GOLONGAN"<<endl;
+    cout<<"========================================="<<endl;
+    int jam, n, x, gol;
+    char nama[20], golongan;
+    cout<<"masukkan nama: ";cin>>nama;
+    cout<<"masukkan golongan: ";cin>>golongan;
+    cout<<"masukkkan jumlah jam kerja: ";cin>>jam;
+    x=jam%48;
+    n=x*3000;
+    if(jam>48 && golongan=='a'){
+        gol=(4000*48)+n;
+    }
+    else if(jam>48 && golongan=='b'){
+        gol=(5000*48)+n;
+    }
+    else if(jam>48 && golongan=='c'){
+        gol=(6000*48)+n;
+    }
+    else if(jam>48 && golongan=='d'){
+        gol=(7500*48)+n;
+    }
+    else if(jam<48 && golongan=='a'){
+        gol=(4000*jam);
+    }
+    else if(jam<48 && golongan=='b'){
+        gol=(5000*jam);
+    }
+    else if(jam<48 && golongan=='c'){
+        gol=(6000*jam);
+    }
+    else if(jam<48 && golongan=='d'){
+        gol=(7500*jam);
+    }
+    cout<<"gaji "<<nama<<" adalah: "<<gol;
+    cout<<"==========================="<<endl;
+    cout<<"MENENTUKAN INDEKS MAHASISWA"<<endl;
+    cout<<"==========================="<<endl;
+    int nilai;
+    char mahasiswa[50], indeks,A,B,C,D;
+    cout<<"masukkan nama mahasiswa: ";cin>>mahasiswa;
+    cout<<"masukkan nilai mahasiswa: ";cin>>nilai;
+    if(nilai>=80){
+        cout<<mahasiswa<<" mendapatkan "<<nilai<<" dengan indeks A"<<endl;
+    }
+    else if(70<=nilai<80){
+        cout<<mahasiswa<<" mendapatkan "<<nilai<<" dengan indeks A"<<endl;
+    }
+    else if(55<=nilai<70){
+        cout<<mahasiswa<<" mendapatkan "<<nilai<<" dengan indeks A"<<endl;
+    }
+    else if(40<=nilai<55){
+        cout<<mahasiswa<<" mendapatkan nilai "<<nilai<<" dengan indeks A"<<endl;
+    }
+    cout<<"====================="<<endl;
+    cout<<"WAKTU SETELAH 1 DETIK"<<endl;
+    cout<<"====================="<<endl;
+    int hh, ss, mm;
+    cout<<"masukkan waktu"<<endl;
+    cout<<"jam: ";cin>>hh;
+    cout<<"menit: ";cin>>mm;
+    cout<<"detik: ";cin>>ss;
+    if(ss<60){
+        ss=ss+1;
+    }
+    else if(mm<60){
+        mm=mm+1; ss=0;
+    }
+    else if(hh<24){
+        hh=hh+1; mm=0; ss=0;
+    }
+    else if(ss==60 && mm<60){
+        mm=mm+1;
+        ss=0;
+    }
+    else if(mm==60 && hh<24){
+        hh=hh+1; mm=0; ss=0;
+    }
+    else if(hh==24 && mm==60 && ss==60){
+        hh=1; mm=0; ss=0;
+    }
+    cout<<"waktu setelah 1 detik"<<endl;
+    cout<<"[ "<<hh<<" : "<<mm<<" : "<<ss<<" ]"<<endl;
+    cout<<"========================================="<<endl;
+    cout<<"MENGHITUNG UPAH KARIAWAN MENURUT GOLONGAN"<<endl;
+    cout<<"========================================="<<endl;
+    int jam, n, x, gol, ttl;
+    char nama[20], golongan;
+    cout<<"masukkan nama: ";cin>>nama;
+    cout<<endl;
+    cout<<"masukkan golongan: ";cin>>golongan;
+    cout<<endl;
+    cout<<"masukkkan jumlah jam kerja: ";cin>>jam;
+    cout<<endl;
+    x=jam%48;
+    n=x*3000;
+    switch(golongan){
+        case 'A': gol=4000;break;
+        case 'B': gol=5000;break;
+        case 'C': gol=6000;break;
+        case 'D': gol=7500;break;
+    }
+    if (jam<=48){
+        ttl=gol*jam;
+    }
+    else {
+        ttl=gol*48+n;
+    }
+
+    cout<<"gaji "<<nama<<" adalah: "<<ttl;
+    return 0;
+}
+
+    cout<<"==============="<<endl;
+    cout<<"NAMA NAMA BULAN"<<endl;
+    cout<<"==============="<<endl;
+    int bulan;
+    cout<<"masukkan bulan berapa: ";cin>>bulan;
+    switch(bulan){
+        case 1: cout<<"ini bulan januari"<<endl; break;
+        case 2: cout<<"ini bulan februari"<<endl; break;
+        case 3: cout<<"ini bulan maret"<<endl; break;
+        case 4: cout<<"ini bulan april"<<endl; break;
+        case 5: cout<<"ini bulan mei"<<endl; break;
+        case 6: cout<<"ini bulan juni"<<endl; break;
+        case 7: cout<<"ini bulan juli"<<endl; break;
+        case 8: cout<<"ini bulan agustus"<<endl; break;
+        case 9: cout<<"ini bulan september"<<endl; break;
+        case 10: cout<<"ini bulan oktober"<<endl; break;
+        case 11: cout<<"ini bulan november"<<endl; break;
+        case 12: cout<<"ini bulan desember"<<endl; break;
+        default: cout<<"tidak ada bulan "<<bulan<<endl;
+    }
+    cout<<"===================================================="<<endl;
+    cout<<"MENENTUKAN LUAS, KELILING & DIAGONAL PERSEGI PANJANG"<<endl;
+    cout<<"===================================================="<<endl;
+    float p, l, ttl;
+    int pilihan;
+    cout<<"1. menghitung keliling"<<endl;
+    cout<<"2. menghitung luas"<<endl;
+    cout<<"3. menghitung diagonal"<<endl;
+    cout<<"4. exit"<<endl<<endl;
+    cout<<"masukkan pilihan: ";cin>>pilihan;
+    cout<<endl;
+    switch(pilihan){
+        case 1: cout<<"masukkan panjang PP: ";cin>>p;
+                cout<<"masukkan lebar PP: ";cin>>l;
+                ttl=(2*p)*(2*l); break;
+        case 2: cout<<"masukkan panjang PP: ";cin>>p;
+                cout<<"masukkan lebar PP: ";cin>>l;
+                ttl=p*l; break;
+        case 3: cout<<"masukkan panjang PP: ";cin>>p;
+                cout<<"masukkan lebar PP: ";cin>>l;
+                ttl=sqrt(p*p+l*l); break;
+        default: cout<<"anda mengakhiri program"<<endl;
+    }
+    cout<<endl<<"hasilnya: "<<ttl;
+    cout<<"================================"<<endl;
+    cout<<"DURASI TELEPON DALAM STUDI KASUS"<<endl;
+    cout<<"================================"<<endl;
+    int hh1, mm1, ss1, hh2, mm2, ss2, hh, mm, ss, rumus, tarif, lapu, bayar, kode;
+    cout<<"masukkan waktu awal telepon"<<endl;
+    cout<<"jam: ";cin>>hh1;
+    cout<<"menit: ";cin>>mm1;
+    cout<<"detik: ";cin>>ss1;
+    cout<<endl;
+    cout<<"masukkan waktu akhir telepon: "<<endl;
+    cout<<"jam: ";cin>>hh2;
+    cout<<"menit: ";cin>>mm2;
+    cout<<"detik: ";cin>>ss2;
+    cout<<endl;
+    if(mm1<=mm2 && ss1<=ss2){
+        hh=hh2-hh1; mm=mm2-mm1; ss=ss2-ss1;
+    }
+    else if (mm1<=mm2 && ss1>=ss2){
+        ss=60-ss1+ss2; mm=mm2-mm1-1; hh=hh2-hh1;
+    }
+    else if(mm1>=mm2 && ss1<=ss2){
+        hh=hh2-hh1-1; mm=60-mm1+mm2; ss=ss2-ss1;
+    }
+    else if(mm1>=mm2 && ss1>=ss2){
+        hh=hh2-hh1-1; mm=60-mm1+mm2; ss=60-ss1+ss2;
+    }
+    cout<<"durasi telpon adalah [ "<<hh<<" : "<<mm<<" : "<<ss<<" ]"<<endl<<endl;
+    cout<<"kode wilayah"<<endl;
+    cout<<"1.jakarta(02)"<<endl<<"2. padang(0751)"<<endl<<"3. medan(0737)"<<endl<<"4. balikpapan(091)"<<endl<<"5. ternate(098)"<<endl;
+    cout<<"masukkan kode: ";cin>>kode;
+    switch(kode){
+        case 1: lapu=60; bayar=150; break;
+        case 4: lapu=20; bayar=415; break;
+        case 5: lapu=17; bayar=510; break;
+        case 3: lapu=25; bayar=375; break;
+        case 2: lapu=30; bayar=250; break;
+    }
+    rumus=(hh*3600)/lapu+(mm*60)/lapu+(ss/lapu);
+    tarif=rumus*bayar;
+    cout<<"tarif yang dikenakan adalah "<<tarif<<endl;
+    cout<<"======================="<<endl;
+    cout<<"AKAR PERSSAMAAN KUADRAT"<<endl;
+    cout<<"======================="<<endl;
+    int a, b, c, D, x1, x2;
+    cout<<"mencari fungsi kuadrat ax+bx+c"<<endl;
+    cout<<"masukkan nilai a: ";cin>>a;
+    cout<<"masukkan nilai b: ";cin>>b;
+    cout<<"masukkan nilai c: ";cin>>c;
+    cout<<endl;
+    D=(b*b)-(4*a*c);
+    if(D<0){
+        cout<<"D<0: akar akarnya imaginer"<<endl;
+    }
+    else if(D>0){
+        cout<<"D>0: akar akarnya riil dan berbeda (X1 != X2)"<<endl;
+    }
+    else if(D=0){
+        cout<<"D=0: akarnya sama (X1=X2)"<<endl;
+    }
+    x1= (-b - sqrt(D))/2*a;
+    x2= (-b + sqrt(D))/2*a;
+    cout<<"X1: "<<x1<<"\tX2: "<<x2<<endl;
+    cout<<"==========================================================="<<endl;
+    cout<<"TANGGAL BERIKUTNYA DI BULAN FEBRUARI(MENURUT TAHUN KABISAT)"<<endl;
+    cout<<"==========================================================="<<endl;
+    int dd1, mm1, yy1, dd2, mm2, yy2;
+    cout<<"masukkan tanggal: ";cin>>dd1;
+    cout<<"masukkan bulan: ";cin>>mm1;
+    cout<<"masukkan tahun: ";cin>>yy1;
+
+    if(yy1%4==0){
+        if(mm1==1,3,5,7,8,10,12 && dd1<31){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        else if(mm1==1,3,5,7,8,10 && dd1==31){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+        }
+        else if(mm1==4,6,9,11 && dd1<30){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        else if(mm1==12 && dd1==31){
+            yy2=yy1+1; mm2=1; dd2=1;
+        }
+        else if(mm1==4,6,9,11 && dd1==30){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+        }
+        else if(mm1==2 && dd1<29){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        if(mm1==2 && dd1==29){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+        }}
+    else {
+         if(mm1==1,3,5,7,8,10,12 && dd1<31){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        else if(mm1==1,3,5,7,8,10 && dd1==31){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+        }
+        else if(mm1==4,6,9,11 && dd1<30){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        else if(mm1==12 && dd1==31){
+            yy2=yy1+1; mm2=1; dd2=1;
+        }
+        else if(mm1==4,6,9,11 && dd1==30){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+        }
+        else if(mm1==2 && dd1<28){
+            yy2=yy1; mm2=mm1; dd2=dd1+1;
+        }
+        if(mm1==2 && dd1==28){
+            yy2=yy1; mm2=mm1+1; dd2=1;
+    }}
+    cout<<"[ hari : bulan : tahun ]"<<endl;
+   	cout<<"[   "<<dd2<<" :   "<<mm2<<"   :  "<<yy2<<" ]";
+    return 0;
+}

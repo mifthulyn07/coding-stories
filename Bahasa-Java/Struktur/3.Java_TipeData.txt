@@ -1,0 +1,62 @@
+package svzsf;
+public class Svzsf {
+    public static void main(String[] args) {
+        //tipe data di java: integer, byte, short, long, double, float, char, boolean
+        
+        System.out.println("===BYTE===");//byte(satuan)
+        byte j=12;
+        System.out.println("nilai byte j= " + j);
+        System.out.println("nilai max= " + Byte.MAX_VALUE);
+        System.out.println("nilai min= " + Byte.MIN_VALUE);
+        System.out.println("besar integer= " + Byte.BYTES + " bytes ( " + Byte.SIZE + " bit )");
+       
+        System.out.println("===SHORT===");//Short(satuan)
+        short k=13;
+        System.out.println("nilai short k= " + k);
+        System.out.println("nilai max= " + Short.MAX_VALUE);
+        System.out.println("nilai min= " + Short.MIN_VALUE);
+        System.out.println("besar integer= " + Short.BYTES + " bytes ( " + Short.SIZE + " bit )");
+        
+        System.out.println("===INTEGER===");//integer(satuan)
+        int i=10;
+        System.out.println("nilai integer i= " + i);
+        System.out.println("nilai max= " + Integer.MAX_VALUE);
+        System.out.println("nilai min= " + Integer.MIN_VALUE);
+        System.out.println("besar integer= " + Integer.BYTES + " bytes ( " + Integer.SIZE + " bit )");
+        
+        System.out.println("===LONG===");//Long(satuan)
+        long l=11L;
+        System.out.println("nilai long l= " + l);
+        System.out.println("nilai max= " + Long.MAX_VALUE);
+        System.out.println("nilai min= " + Long.MIN_VALUE);
+        System.out.println("besar integer= " + Long.BYTES + " bytes ( " + Long.SIZE + " bit )");
+        
+        System.out.println("===FLOAT===");//Float(koma, bilangan real)
+        float N=16,7f;
+        System.out.println("nilai float N= " + N);
+        System.out.println("nilai max= " + Float.MAX_VALUE);
+        System.out.println("nilai min= " + Float.MIN_VALUE);
+        System.out.println("besar integer= " + Float.BYTES + " bytes ( " + Float.SIZE + " bit )");
+        
+        System.out.println("===DOUBLE===");//Double(koma, bilangan real)
+        double M=17.7d;
+        System.out.println("nilai double M= " + M);
+        System.out.println("nilai max= " + Double.MAX_VALUE);
+        System.out.println("nilai min= " + Double.MIN_VALUE);
+        System.out.println("besar integer= " + Double.BYTES + " bytes ( " + Double.SIZE + " bit )");
+        
+        System.out.println("===CHAR===");//char(karakter)
+        char c='d';
+        System.out.println("nilai char c= " + c);
+        System.out.println("nilai max= " + Character.MAX_VALUE);
+        System.out.println("nilai min= " + Character.MIN_VALUE);
+        System.out.println("besar integer= " + Character.BYTES + " bytes ( " + Character.SIZE + " bit )");
+        
+        System.out.println("===BOOLEAN===");//boolean(true, false)
+        boolean d=false;
+        System.out.println("nilai boolean d= " + d);
+        System.out.println("nilai max= " + Boolean.TRUE);
+        System.out.println("nilai min= " + Boolean.FALSE);
+    }
+    
+}

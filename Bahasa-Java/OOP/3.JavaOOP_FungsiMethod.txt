@@ -1,0 +1,53 @@
+package Mifthulyn07;
+class Mahasiswa{
+    //data member
+    String nama;
+    String nim;
+    //constructor
+    Mahasiswa(String inputNama, String inputNim){
+        this.nama = inputNama;
+        this.nim = inputNim;
+    }
+    //method1 tanpa return dan tanpa parameter
+    void show(){
+        System.out.println("\nNama: " + this.nama);
+        System.out.println("NIM: " + this.nim);
+    }
+    //method2 tanpa return dan punya parameter
+    void show1(String inputNama, String inputNim){
+        this.nama = inputNama;
+        this.nim = inputNim;
+    }
+    //method3 punya return tapi tidak punya parameter
+    String show2_1(){
+        return this.nama = "dania";
+    }
+    String show2_2(){
+        return this.nim = "0702192033";
+    }
+    //method4 punya return dan punya parameter
+    String show3_1(String inputNama){
+        return this.nama = inputNama;
+    }
+    String show3_2(String inputNim){
+        return this.nim = inputNim;
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        //konstruktor dengan method1
+        Mahasiswa mahasiswa1 = new Mahasiswa("Miftah", "0702192031");
+        mahasiswa1.show();//mengambil dari konstrutor
+        //method2 dengan method1
+        mahasiswa1.show1("tutung", "0702192032");
+        mahasiswa1.show();
+        //method3
+        System.out.println("\nNama: " + mahasiswa1.show2_1());
+        System.out.println("NIM: " + mahasiswa1.show2_2());
+        //method4
+        String nama = mahasiswa1.show3_1("leni");
+        System.out.println("\nNama: " + nama);
+        String nim = mahasiswa1.show3_2("0702192034");
+        System.out.println("NIM: " + nim);
+    }
+}

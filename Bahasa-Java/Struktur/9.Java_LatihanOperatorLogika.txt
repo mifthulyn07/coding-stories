@@ -1,0 +1,21 @@
+package mifthulyn07;//selalu huruf kecil
+import java.util.Scanner;//tahap awal untuk mengimput
+public class Mifthulyn07 {//nama yang asli
+    public static void main(String[] args) {
+        Scanner InputUser = new Scanner(System.in);
+        //Latihan Operator Logika
+        int nilaitebakan;
+        int nilaibenar = 6;
+        boolean statustebakan;
+        //Operasi Logika
+        System.out.print("masukkan nilai tebakan: ");
+        nilaitebakan = InputUser.nextInt();
+        statustebakan = (nilaitebakan == nilaibenar);
+        System.out.println("jawabanmu: " + statustebakan);
+        //Operasi Aljabar Bolean
+        System.out.print("masukkan nilai tebakan: ");
+        nilaitebakan = InputUser.nextInt();
+        statustebakan = (nilaitebakan > 4) && (nilaitebakan < 9);
+        System.out.println("jawabanmu: " + statustebakan);
+    }
+}

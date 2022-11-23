@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string kalimat1 ("mifta suka olahraga supaya sehat");
+    string kalimat2("mifta akan sukses");
+
+    cout<<"1: "<<kalimat1<<endl;
+    cout<<"2: "<<kalimat2<<endl<<endl;
+
+    //substring, mengambil string di tengah tengah
+    cout<<"mengambil substring kalimat 1: "<<kalimat1.substr(0,5)<<endl;//substr(index,panjang)
+    cout<<"mengambil substring kalimat 2: "<<kalimat2.substr(11, 6)<<endl<<endl;
+
+    //mencari posisi dari substring
+    cout<<"index 'miftah' dari kalimat 1: "<<kalimat1.find("mifta")<<endl;
+    cout<<"index 'sukses' dari kalimat 2: "<<kalimat2.find("sukses")<<endl<<endl;
+
+    //looping mencari indeks 'a'
+    int n=kalimat1.find("a");
+    cout<<"mencari indeks a kalimat 1 dari depan: "<<n<<endl;
+    cout<<"mencari indeks a yg ke 2 kalimat 1 dari depan: "<<kalimat1.find("a", n+1)<<endl<<endl;
+    int m=kalimat2.find_last_of("a");
+    cout<<"mencari indeks a kalimat 2 dari belakang: "<<m<<endl;
+    cout<<"mencari indeks a yg ke 2 kalimat 2 dari belakang: "<<kalimat2.find_last_of("a", m+1)<<endl;//di sublem rfind
+
+
+    return 0;
+}

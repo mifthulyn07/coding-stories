@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string kalimat_input;
+
+    cout<<"masukkan kalimat: ";
+    getline(cin,kalimat_input);//inputan string getline(cin, variabel);
+
+    int posisi = 0;
+    int jumlah = 0;
+    while(true){
+        posisi = kalimat_input.find(" ", posisi + 1);
+        if(posisi<0){
+            break;
+        }
+        jumlah++;
+    }
+    cout<<"jumlah spasi: "<<jumlah<<endl;//menghitung jumlah spas
+    return 0;
+}

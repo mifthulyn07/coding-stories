@@ -1,0 +1,13 @@
+package javaapplication3;
+public class JavaApplication3 {
+    public static void main(String[] args) {
+        System.out.println("MACAM-MACAM NGE-PRINT KE LAYAR");
+        System.out.println("untuk memberi baris baru / enter ");
+        System.out.printf("bisa membawa angka %d", 225);
+        System.out.print("mengeprint ke layar, tapi supaya bisa ada garis baru ditambahkan \n");
+        System.out.print("ngeprint ke layar namun tidak ada efek enter");
+        
+        
+    }
+    
+}

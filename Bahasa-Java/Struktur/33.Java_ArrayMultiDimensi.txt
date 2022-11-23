@@ -1,0 +1,51 @@
+package miftahululyanahutabarat;
+import java.util.Arrays;
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        System.out.println("=====MEMBUAT ARRAY 2 DIMENSI DENGAN ASSIGMENT");
+        int[][] array_2D = { 
+            {1,2,5,6,6}, 
+            {2,4,5,4,5} 
+        };
+        System.out.println("Menampilkan manual: " + Arrays.deepToString(array_2D));
+        
+        System.out.println("\n=====MEMBUAT ARRAY MULTI DIMENSI DENGAN DEKLARASI");
+        int[][] Array_Multi = new int[3][4];//3 baris & 4 kolom
+        PrintArray2(Array_Multi);
+        PrintArray3(Array_Multi);
+        PrintArray4(Array_Multi);
+    }
+    
+    private static void PrintArray(int[][] DataArray){
+        System.out.println(Arrays.deepToString(DataArray));
+    }
+    
+    private static void PrintArray2(int[][] DataArray){//agar lebih rapih saja
+        System.out.println("Dengan Cara Looping: ");
+        for(int i=0; i<DataArray.length; i++){
+            System.out.println(Arrays.toString(DataArray[i]));
+        }
+    }
+    
+    private static void PrintArray3(int[][] DataArray){
+        System.out.println("Dengan cara Looping manual: ");
+        for(int i=0; i<DataArray.length; i++){
+            System.out.print("[");
+            for(int j=0; j<DataArray[i].length; j++){
+                System.out.print(DataArray[i][j]+",");
+            }
+            System.out.print("]\n");
+        }
+    }
+    
+    private static void PrintArray4(int[][] DataArray){
+        System.out.println("Dengan cara Looping ForEach: ");
+        for(int[] baris: DataArray){
+            System.out.print("[");
+            for(int Angka: baris){
+                System.out.print(Angka + ",");
+            }
+            System.out.print("]\n");
+        }
+    }
+}

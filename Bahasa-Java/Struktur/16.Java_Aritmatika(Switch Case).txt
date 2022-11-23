@@ -1,0 +1,30 @@
+package mifthulyn07;//selalu huruf kecil
+import java.util.*;
+public class Mifthulyn07 {//nama yang asli
+    public static void main(String[] args){
+        Scanner UserInput = new Scanner(System.in);
+        float a, b, hasil;
+        String operator;//tidak bisa memekai char
+        System.out.print("masukkan a: ");
+        a = UserInput.nextFloat();
+        System.out.print("masukkan operator: ");
+        operator = UserInput.next();
+        System.out.print("masukkan nilai b: ");
+        b = UserInput.nextFloat();
+        
+        switch(operator){
+        case "+": 
+            hasil = a + b; 
+            System.out.printf("%f + %f = %f\n", a, b, hasil);break;
+        case "-": 
+            hasil = a - b; 
+            System.out.printf("%f - %f = %f\n", a, b, hasil);break;
+        case "x": 
+            hasil = a * b; 
+            System.out.printf("%f x %f = %f\n", a, b, hasil);break;
+        case "/": 
+            hasil = a / b; 
+            System.out.printf("%f / %f = %f\n", a, b, hasil);break;
+    }
+    }
+}

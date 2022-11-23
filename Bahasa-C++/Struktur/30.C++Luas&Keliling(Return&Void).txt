@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+//latihan luas & keliling persegi panjang memakai reporter(return) & worker(void)
+double luas_PP(double p, double l){
+    double luas = p * l;
+    return luas;
+}
+
+void tampilkan_luas(double p, double l){
+    cout<<"luasnya adalah: "<<luas_PP(p, l)<<endl;
+}
+
+double keliling_PP(double p, double l){
+    double keliling = 2 * (p + l);
+    return keliling;
+}
+
+void tampilkan_keliling(double p, double l){
+    cout<<"kelilingnya adalah: "<<keliling_PP(p, l)<<endl;
+}
+
+int main(){
+    double p, l;
+    cout<<"masukkan nilai panjang: ";cin>>p;
+    cout<<"masukkan nilai lebar: ";cin>>l;
+    tampilkan_luas(p, l);
+    tampilkan_keliling(p, l);
+    return 0;
+}

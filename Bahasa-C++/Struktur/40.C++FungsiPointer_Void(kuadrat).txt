@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+void fungsi(int *);//arti bintang adalah pointer
+void kuadrat(int *);
+int main(){
+    int a = 5;
+    cout << "nilai dari a: " << a << endl;
+    cout << "adress dari a: " << &a << endl << endl;
+    fungsi(&a);
+    kuadrat(&a);
+    return 0;
+}
+void fungsi(int *b){
+    cout << "nilai dari b: " << *b << endl;//referencing=mengambil data dari sebuah pointer
+    cout << "adress dari b: " <<  b << endl << endl;
+}
+void kuadrat(int *nilai){//mencoba menggunakan void dengan pointer untuk kuadrat
+    *nilai = (*nilai) * (*nilai);
+    cout << "hasil dari kuadrat: " << *nilai << endl;
+    cout << "adress dari perkalian kuadrat: " << nilai << endl;
+}

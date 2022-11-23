@@ -1,0 +1,35 @@
+#include <iostream>
+#include<limits>
+using namespace std;
+int main()
+{
+    int x,a,c,d; float y,b; char aritmatika;
+    cout<<"masukkan nilai per-1: ";cin>>x;
+    cout<<"operator +,/,-,*: ";cin>>aritmatika;
+    cout<<"masukkan nilai ke-2: ";cin>>y;
+
+    if (aritmatika == '*'){
+        cout<<x<<aritmatika<<y<<" = ";
+        a=x*y;
+        cout<<a;
+    }
+    else if (aritmatika == '/'){
+        cout<<x<<aritmatika<<y<<" = ";
+        b=x/y;
+        cout<<b;
+    }
+    else if (aritmatika == '+'){
+        cout<<x<<aritmatika<<y<<" = ";
+        c=x+y;
+        cout<<c;
+    }
+    else if (aritmatika == '-'){
+        cout<<x<<aritmatika<<y<<" = ";
+        d=x-y;
+        cout<<d;
+    }
+    else{
+        cout<<"operator anda salah";
+    }
+    return 0;
+}

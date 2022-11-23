@@ -1,0 +1,41 @@
+package Mifthulyn07;
+
+//class tanpa constructor/class polos
+class Polos{
+    String DataString;
+    int DataInteger;
+}
+
+//class dengan constructor
+class Mahasiswa{
+    String nama;
+    String nim;
+    String jurusan;
+    
+    //contructor dipanggil saat object pertama kali dibuat
+//    Mahasiswa(){
+//        System.out.println("ini adalah Constructor");
+//    }
+    
+    //constructor dengan parameter
+    Mahasiswa(String InputNama, String InputNim, String InputJurusan){
+        nama = InputNama;
+        nim = InputNim;
+        jurusan = InputJurusan;
+        
+        System.out.println(nama);
+        System.out.println(nim);
+        System.out.println(jurusan);
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        Mahasiswa mahasiswa1 = new Mahasiswa("Miftah", "0702192031", "SI");//lngsung letak valuenya di object
+        Mahasiswa mahasiswa2 = new Mahasiswa("Putri", "0702192030", "SI");
+        
+//       Polos objectpolos = new Polos();
+//       objectpolos.DataString = "polos";
+//       objectpolos.DataInteger = 0;
+//       System.out.println(objectpolos.DataString);
+//       System.out.println(objectpolos.DataInteger);   
+    }}

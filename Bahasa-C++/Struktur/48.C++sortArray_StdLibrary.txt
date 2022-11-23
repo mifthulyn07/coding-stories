@@ -1,0 +1,76 @@
+*tidak memakai using namespace std;
+#include <iostream>
+#include <array>
+#include <algorithm>//untuk sorting = mengurutkan
+const size_t arraySize = 10;//tidak int atau char namun size_t untuk bisa masuk ke dua duanya
+
+void printArray(std::array <int, arraySize> &angka){
+    std::cout<<"array: ";
+    for(int &i : angka){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl;
+}
+
+void printArray(std::array <char, arraySize> &huruf){
+    std::cout<<"array: ";
+    for(char &i : huruf){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl;
+}
+
+int main()
+{
+    std::array <int, arraySize> angka = {3,5,7,4,6,8,9,2,1,0};
+    std::array <char, arraySize> huruf = {'c','d','e','a','b','h','i','g','f','j'};
+
+    printArray(angka);
+    printArray(huruf);
+
+    std::cout<<std::endl;
+    std::sort(angka.begin(), angka.end());//mengurutkan dari yang terecil ke yang terbesar
+    printArray(angka);
+    std::sort(huruf.begin(), huruf.end());
+    printArray(huruf);
+    return 0;
+}
+
+
+#include <iostream>
+#include <array>
+#include <algorithm>//untuk sorting = mengurutkan
+using namespace std;
+const size_t arraySize = 10;//tidak int atau char namun size_t untuk bisa masuk ke dua duanya
+
+void printArray(array <int, arraySize> &angka){
+    cout<<"array: ";
+    for(int &i : angka){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
+
+void printArray(array <char, arraySize> &huruf){
+    cout<<"array: ";
+    for(char &i : huruf){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
+
+int main()
+{
+    array <int, arraySize> angka = {3,5,7,4,6,8,9,2,1,0};
+    array <char, arraySize> huruf = {'c','d','e','a','b','h','i','g','f','j'};
+
+    printArray(angka);
+    printArray(huruf);
+
+    cout<<endl;
+    sort(angka.begin(), angka.end());//mengurutkan dari yang terecil ke yang terbesar
+    printArray(angka);
+    sort(huruf.begin(), huruf.end());
+    printArray(huruf);
+    return 0;
+}

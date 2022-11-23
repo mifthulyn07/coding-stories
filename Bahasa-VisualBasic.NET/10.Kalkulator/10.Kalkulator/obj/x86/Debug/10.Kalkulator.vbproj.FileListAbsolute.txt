@@ -1,0 +1,12 @@
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\bin\Debug\10.Kalkulator.exe
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\bin\Debug\10.Kalkulator.pdb
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\bin\Debug\10.Kalkulator.xml
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\_10.Kalkulator.Form1.resources
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\_10.Kalkulator.Resources.resources
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.vbproj.GenerateResource.Cache
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.exe
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.xml
+D:\Program\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.pdb
+D:\Programming\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.exe
+D:\Programming\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.xml
+D:\Programming\percobaan\CobaVisualStudio\10.Kalkulator\10.Kalkulator\obj\x86\Debug\10.Kalkulator.pdb

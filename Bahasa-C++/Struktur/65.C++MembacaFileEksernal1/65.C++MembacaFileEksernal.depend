@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1596523951 source:d:\bahasaprogram\c++\65.c++membacafileeksernal\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

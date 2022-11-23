@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+//menggunakan prototipe(menaruh dekralasi diatas dan fungsi dibawah)
+double volume_persegi(double p, double l, double t=4);//t=4 adalah default argumen atau nilai standarnya
+int main()
+{
+    cout<<"hasil volume kubus adalah: "<<volume_persegi(2,3)<<endl;
+    return 0;
+}
+double volume_persegi(double p, double l, double t){
+    return p * l * t;
+}

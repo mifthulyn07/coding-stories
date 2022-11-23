@@ -1,0 +1,69 @@
+tipe operator python
+1.ARITMATIKA
++ : penjumlahan
+- : pengurangan
+* : perkalian
+/ : pembagian
+% : modulus (sisa bagi)
+contoh: 10 % 4 = 2
+** : pemangkatan
+// : floor (pembulatan)
+contoh: 10 // 4 = 2
+
+2.COMPARISON --> menghasilkan tipe boolean
+== : sama dengan
+!= : tidak sama dengan
+> : lebih besar dari
+< : lebih kecil dari
+>= : lebih besar sama dengan
+<= : lebih kecil sama dengan
+
+3.ASSOGNMENT 
+= : (operand kanan = operand kiri)
+contoh: a = hewan --> print (a) = hewan
++= : (operand kanan + operand kiri)
+contoh: arah = kanan += kiri --> print(arah) = kanankiri
+-= : (operand kanan - operand kiri)
+*= : (operand kanan * operand kiri)
+/= : (operand kanan / operand kiri)
+%= : (operand kanan % operand kiri)
+**= : (operand kanan ** operand kiri)
+//= : (operand kanan // operand kiri)
+
+4. LOGICAL --> menghasilkan tipe boolean
+and = jika kedua operand true(benar) maka benar, selanjutnya semua salah
+or = jika kedua operand false (salah) maka salah, selanjutnya semua benar
+not = setiap false(salah) jawabannya true(benar), dan true(benar) jawabannya false(salah)
+
+5. MEMBERSHIP --> biasanya pake if-else
+in : ada di
+contoh: 
+angka = 10 --> jika di run kan "iya, angka ada di list"
+if 
+angka in [10, 11, 12, 13, 14, 15]
+print ("iya, angka ada di list")
+else
+print (angka tidak ada di list)
+not in : tidak ada di
+
+6. IDENTITY --> menghasilkan tipe boolean
+is : bernilai true jika objek menunjuk ke nilai yang sama
+contoh: 
+hewan = "kambing"
+binatang = "kucing"
+hewan is binatang --> maka jawabannya "true" karna id hewan dan id binatang sama
+namun jika 
+pet = "kucing"
+hewan is pet --> maka jawabannya "false" karna hanya ada id pet, id kucing tidak ada
+is not : kebalikan
+contoh: 
+bintang = "kucing"
+kucing is not binantang --> maka jawabannya "true" 
+namun jika 
+hewan = "kambing"
+binatang = "kambing"
+hewan is not binatang maka jawabannya "false"
+
+7. BITWISE
+
+

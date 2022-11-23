@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"=============================="<<endl;
+    cout<<"MENCARI ANGKA YANG MAX DAN MIN"<<endl;
+    cout<<"=============================="<<endl;
+    int jumlah, angka, min, max, i;
+    cout<<"masukkan jumlah angka: ";cin>>jumlah;
+    for(i=1; i<=jumlah; i++){
+        cout<<"masukkan angka: ";cin>>angka;
+        cout<<endl;
+        if(i==1){
+            min=angka;
+            max=angka;
+        }
+        else if(min>=angka){
+            min=angka;
+        }
+        else if(max<=angka){
+            max=angka;
+        }
+    }
+    cout<<endl;
+    cout<<"minimum: "<<min<<endl;
+    cout<<"maximum: "<<max<<endl;
+    return 0;
+}

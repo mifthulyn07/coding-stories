@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+//prototipe: menaruh dekralasi diatas dan fungsi dibawah
+double luas_PP(double p, double l);
+void tampilkan(double p, double l);
+
+int main(){
+    double p, l, luas;
+    cout<<"masukkan nilai panjang: ";cin>>p;
+    cout<<"masukkan nilai lebar: ";cin>>l;
+    luas = luas_PP(p, l);
+    cout<<"luas dari memakai return: "<<luas<<endl;
+    tampilkan(p, l);
+    return 0;
+}
+
+double luas_PP(double p, double l){
+    return p * l;
+}
+
+void tampilkan(double p, double l){
+    cout<<"luas dari memakai void: "<<luas_PP(p,l)<<endl;
+}

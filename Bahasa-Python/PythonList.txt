@@ -1,0 +1,4 @@
+list 
+list_hewan = ["kucing", "kambing", "burung", "ayam"]
+list_hewan[1] = kambing
+list_hewan[0] = kucing

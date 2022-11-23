@@ -1,0 +1,26 @@
+package mifthulyn07;//selalu huruf kecil
+import java.util.*;
+public class Mifthulyn07 {//nama yang asli
+    public static void main(String[] args){
+        Scanner UserInput = new Scanner(System.in);
+        int a, i=1, j, k=1;
+        System.out.print("berapa kali kalimat 'saya pasti sukses' dilakukan? ");
+        a = UserInput.nextInt();
+        System.out.println("===WHILE===");
+        while(i <= a){
+            System.out.println(i + ".saya pasti sukses");
+            i++;
+        } 
+        System.out.println("===FOR===");
+        for (j=1; j<=a; j++){
+            System.out.println(j + ".saya pasti sukses");
+        }
+        System.out.println("===DO-WHILE===");
+        do{
+            System.out.println(k + ".saya pasti sukses");
+            k++;
+        }
+        while(k <= a);
+    }
+   
+}
