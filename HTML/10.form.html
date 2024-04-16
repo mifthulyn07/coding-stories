@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form HTML</title><!-- form: input,textarea,select,button,label -->
+</head>
+<body>
+	<form action="_url_" method="post" encytype="">
+		<label for="name"><mark>Text </mark></label><input type="text" name="name" maxlength="9" size="25" requied><br><br><!-- requied is form that must be filled-->
+
+		<label for="username"><mark>Email </mark></label><input type="email" id="username"><br><br><!-- type:text,password,radio,checkbox,submit,reset,button -->
+		<!-- label's for is must same with input's id, it marks that label has input or username's label -->
+
+		<label for="password"><mark>Password </mark></label><input type="password" id="password" name="Email"><br><br>
+
+		<label for="birthdate"><mark>Date </mark></label><input type="date" id="birthdate"><br><br>
+
+		<label for=birthtime><mark>Time </mark></label><input type="time" id="birthtime"><br><br>
+
+		<label for="sibling"><mark>Number </mark></label><input type="number" id="sibling"><br><br>
+		
+		<label for="tel"><mark>Tel </mark></label><input type="tel" id="tel"><br>
+
+		<label for="Range"></label><mark>Range </mark><input type="range" id="grateful"><br><br>
+
+		<label for=image><mark>File </mark></label><input type="file" id="image">
+
+		<p><mark>Radio </mark>
+		<label for="male"> Male: </label><input type="radio" id="male" name="gender">
+		<label for="female">Female: </label><input type="radio" id="female" name="gender"></p>
+		
+		<p><mark>Checkbox </mark>
+		<label for="sing"> Singing: </label><input type="checkbox" name="hobby1" id="sing">
+		<label for="playguitar">playing a Guitar: </label><input type="checkbox" name="hobby2" id="playguitar">
+		<label for="cook">Cooking: </label><input type="checkbox" name="hobby3" id="cook">
+		<label for="exercise">Exercise: </label><input type="checkbox" name="hobby4" id="exercise"></p>
+
+		<label for="color"><mark>Color </mark></label><input type="color" id="color">
+			
+			<p><mark>Select </mark>
+		<select><!-- here it has options, there are multiple or not  -->
+			<option>Bandung</option>
+			<option>Medan</option>
+			<option>Surabaya</option>
+			<option>makasar</option>
+		</select></p>
+		
+		<p><mark>Textarea </mark></p>
+		<textarea cols="25" rows="5" align="left"></textarea><br><br>
+<!-- there are many input's type, that are color,datetime-local,number,tel,week,date, email,range,time,datetime,month,search,url,password,text,file -->
+
+		<!-- <input type="submit" value="Send!">--><!-- this is not recommended --> 
+		<button type="submit">Submit</button>  <input type="reset"> 
+
+<br><br><br><hr color="pink" weigth="10" size="7"><br><br><br>
+		
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td><label for="username" ><mark>Username:</mark></label></td>
+				<td><center><input type="text" id="username"></center></td>
+			</tr>
+			<tr>
+				<td><label for="pass"><mark>Password:</mark></label></td>
+				<td><center><input type="text" id="pass"></center></td>
+			</tr>
+			<tr>
+				<td colspan="2"><mark>Gender:</mark><label for="male"> Male</label><input type="radio" id="male" name="gender"><label for="female"> Female</label><input type="radio" id="female" name="gender"></td> 
+			</tr>
+			<tr>
+				<td colspan="2"><mark>Hobby:</mark><label for="Singging"> Singging</label><input type="checkbox" id="singging"><label for="cooking"> Cooking</label><input type="checkbox" id="cooking"><label for="coding"> Coding</label><input type="checkbox" id="coding"></td>
+			</tr>
+			<tr>
+				<td><mark>National:</mark></td>
+				<td><center><select>
+					<option>America</option>
+					<option>Indonesia</option>
+					<option>Malasya</option>
+					<option>Australia</option>
+				</select></center></td>
+			</tr>
+			<tr>
+				<td><mark>Your Dreams:</mark></td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><button>Send!</button></center></td>
+			</tr>
+		</table>
+	</form>
+
+	<br><br><br><hr color="pink" weigth="10" size="7"><br><br><br>
+
+	<fieldset>
+		<legend>Login</legend>
+		<label for="username">Username</label>
+		<input type="email" name="username" id="username">
+		<label for="password">Password</label>
+		<input type="password" name="password" id="pasword">
+	</fieldset>
+</body>
+</html>

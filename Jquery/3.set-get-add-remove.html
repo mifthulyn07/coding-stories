@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set, Get, add, remove</title>
+    <!-- cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <a class="get" href="www.w3chools.com">href: w3school</a><br>
+    <button id="get">click jika ingin men get attribute href</button>
+    
+    <hr>
+    <a class="set" href="www.w3chools.com" title="link">href: w3school</a><br>
+    <button id="set">click jika ingin men set attribute href</button>
+
+    <hr>
+    <a class="callback" href="www.w3chools.com">href: w3school</a><br>
+    <button id="callback">click jika ingin men callback attribute href(penggunaan set)</button>
+    
+    <hr>
+    <ol class="list">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <button id="prepend">Prepend</button>
+    <button id="append">Append</button>
+    <button id="before">Before</button>
+    <button id="after">After</button>
+
+    <hr>
+    <div class="empty" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+    </div>
+    <button id="empty">Empty</button> 
+    
+    <hr>
+    <div class="remove" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+    </div>
+    <button id="remove">Remove</button> 
+
+
+
+    <script> 
+        $(document).ready(function(){
+            // ==GET >> mengambil text(), html(), ataupun val() seperti attribute, dll
+                $('#get').click(function(){
+                    alert('kamu sudah melakukan get href: '+$('.get').attr("href"));
+                });
+            // ==SET >> dapat mengubah text(), html(), ataupun val() seperti atribute, dll
+                $("#set").click(function(){
+                    $(".set").attr({
+                        "href": "www.w3schools.com!!!",
+                        "title": "cumanlink"
+                    });
+                    $(".set").text("www.w3schools.com!!!");
+                    alert("href sudah beganti menjadi: "+$('.set').attr("href")+" & title beganti menjadi "+$('.set').attr("title"));
+                });
+            //==CALLBACK >> contoh dibawah mengganti value attribut menggunakan function
+                $("#callback").click(function(){
+                    $('.callback').text("www.w3school.com!!!")
+                    $(".callback").attr("href", function(i, origValue){
+                        return alert("hreff sudah berganti menjadi: "+origValue + "!!!"); 
+                    });
+                }); 
+            // ==ADD ELEMENTS 
+                // prepend, dapat digunakan pada child element
+                $("#prepend").click(function(){
+                    $(".list").prepend("<li>Prepended item</li>");
+                });
+                // append >> dapat digunakan pada child element
+                $("#append").click(function(){
+                    $(".list").append("<li>Appended item</li>");
+                });
+                // before >> digunakan pada parents element
+                $("#before").click(function(){
+                    $(".list").before("<li>Before item</li>");
+                });
+                // after >> dapat digunakan pada parent element
+                $("#after").click(function(){
+                    $(".list").after("<li>After item</li>");
+                });
+            // ==REMOVE ELEMENT
+                // empty >> menghapus isi, child
+                $("#empty").click(function(){
+                    $(".empty").empty();
+                });
+                // remove >> menghapus seluruhnya yang di select
+                $("#remove").click(function(){
+                    $(".remove").remove();
+                });
+                
+        });
+    </script>
+</body>
+</html>

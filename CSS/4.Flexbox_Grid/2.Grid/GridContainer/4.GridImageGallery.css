@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ddd;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.gallery {
+    width: 80%;
+    border: 10px solid white;
+    list-style: none;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: grid;
+    margin: 10px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+}

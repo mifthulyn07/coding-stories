@@ -1,0 +1,37 @@
+/*DIMENSI
+just two dimensi, they are weigth, height
+*/
+.header {
+	width: 400px;
+	height: 200px;
+	background-color: lightgreen;
+}
+.header2 {
+	width: 90%;
+	background-color: aqua;
+}
+
+/*4 value of overflow
+1. visible
+2. auto
+3. hidden
+4. scroll
+*/
+div.p1 {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	overflow: auto;/*auto follow the text*/
+}
+div.p11 {
+	width: 200px;
+	height: 200px;
+	background-color: pink;
+	overflow: hidden;/*just show the beginning of the visible text */
+}
+div.p111 {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	overflow: scroll;/*just show the beginning of the visible text */
+}

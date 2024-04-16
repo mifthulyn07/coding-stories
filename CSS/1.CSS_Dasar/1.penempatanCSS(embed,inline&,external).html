@@ -1,0 +1,32 @@
+<!--anatomy of CSS = selector{property: value;}
+selector: use to select the content you want to style
+property:
+-kind of property: http://developer.mozilla.org/en-US/docs/Web/CSS/Reference or http://css-tricks.com/almanac-->
+
+<!-- 2.placement of CSS 
+-embed= it saved in the same file with HTML file, use tag <style></style>
+-inline= it saved in the same file with HTML, use tag <p style="color: lightblue;">...</p>
+-external= it is saparate with HTML file, CSS file combined with HTML file use tag HTML link <link rel="stylsheet" href="style.css"-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example placement of CSS (embed & inline)</title>
+	<link rel="stylesheet" type="text/css" href="1.external.css"><!-- this is example of external -->
+	<style>
+		h1{	color: lightblue;
+			font-family: "arial";
+			text-align: center;
+			font-size: 30 px;
+			color: pink;
+		}
+		body{font-family: arial;}
+	</style><!--this is example of embed-->
+</head>
+<body>
+	<h1>Learning CSS</h1>
+
+	<p style="color: grey;"><!-- this is example of inline --><strong>Assallamu'alaikum,</strong> i'm here for learning CSS, and here i practice to use embed and inline. i hope i can understand completely with css.</p>
+</body>
+</html>
+

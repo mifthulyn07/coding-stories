@@ -1,0 +1,39 @@
+div {
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+}
+
+.one {
+	background-color: coral;
+	text-align: center;
+	line-height: 300px;
+	border-radius: 50%;
+	/*the half of circle area's value will deformed into circle */
+}
+
+.two {
+	background-color: yellow;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	overflow: hidden;
+	/*for image enterinto the background*/
+}
+
+.two img {
+	width: 300px;
+	height: 400px;
+}
+
+.three {
+	background-color: lightgreen;
+	border-radius: 0 50% 50% 50%;
+	background-image: url(../../0.OtherStuff/image/aboutMe/mifthulyn07.jpg);
+	background-repeat: no-repeat;
+	/*for the imange do not repeat*/
+	background-size: cover;
+	/*for full image*/
+
+}

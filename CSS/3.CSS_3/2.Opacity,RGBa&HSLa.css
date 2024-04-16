@@ -1,0 +1,24 @@
+div{
+	width: 300px;
+	height: 300px;
+}
+
+.one{/*if opasity of parents is transparant, then child will follow the parent*/
+	background-color:  rgb(20,252,205,1.0);/*R,G,B, Alpha(opacity)*/
+	position: relative;
+}
+
+.two{
+	background-color:yellow;
+	opacity: 0.5;/*the value of opacity 0-1*/
+	position: absolute;
+	left: 200px;
+	top: 200px;
+}
+
+.three{
+	background-color: hsla(24,100%,63%,0.8);/*H,S,L,alpha(opacity)*/
+	position: absolute;
+	left: 400px;
+	top: 400px;
+}

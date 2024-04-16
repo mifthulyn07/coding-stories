@@ -1,0 +1,31 @@
+/*1.transform: manipulation visual format from HTML's element
+2.transform : 2D & 3D
+scale = memperkecil atau memperbesar
+rotate = memutar
+skew= condong
+translate = merubah posisi sebuah element
+3.syntax: transform: <fungsi>
+4.fungsi(scale, rotate, skew, translate
+5.scale(angka), scalex(angka), scaley(angka)
+rotate(deg), rotatex(deg), rotatey(deg)
+skew(deg), skewx(deg), skewy(deg)
+translate(px), translatex(px), translatey(px)*/
+.kotak{
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	margin: 50px auto;
+	transform: scale(.5);
+	transition: 1s;
+}
+
+.kotak:hover{
+	/*transform: scale(1.5) scale(1);*/
+	/*transform: skew(10deg) translate(200px, 200px);*/
+	transform: rotate(45deg) rotateX(70deg) rotateY(180deg) scale(1.5, 1);/*it is same Scale(x,y)*/
+}
+p{
+
+	font-size: 20px;
+	text-align: center;
+}

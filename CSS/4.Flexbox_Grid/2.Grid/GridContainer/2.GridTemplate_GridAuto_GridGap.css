@@ -1,0 +1,175 @@
+/*  <track-size>: bisa berupa px, %, auto, atau fr(fraction)
+    <line-name>: nama yang bisa diberikan pada track 
+*/
+/* 1. Grid Container
+    grid-template: <grid-template-rows | <grid-template-area> / <grid-template-columns>;
+    grid-template-areas: 
+        "<nama-area> | none | '.' " 
+        "<nama-area> <nama-are> ";
+    grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+    grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+        
+    grid-auto-columns: <track-size>;
+    grid-auto-rows: <track-size>;
+    grid-auto-flow: column | row | column dense | row dense;
+
+    gap: <row-gap> <column-gap>;
+    column-gap: <size>;
+    row-gap: <size>;
+
+    justify-content: start | end | center | stretch;
+    justify-items: ;
+    align-content: ;
+    align-items: ;
+    place-content: ;
+    place-items: ; 
+*/
+/* 2. Grid Item
+    grid-column: ;
+    grid-column-start: ;
+    grid-column-end: ;
+
+    grid-row: ;
+    grid-row-start: ;
+    grid-row-end: ;
+
+    grid-area: ;
+
+    justify-self: ;
+    align-self: ;
+    place-self: ; 
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 100px auto 10px;
+}
+
+.item {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.item:nth-child(even) {
+    background-color: skyblue;
+}
+
+/*  */
+.grid-template-area {
+    /* membuat nama area yang ditulis pada property grid-area pada item */
+    width: 60%;
+    height: 800px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer'; */
+
+    /* shorthand */
+    grid-template:
+        /* rows */
+        'header header header'1fr 'sidebar content content'1fr 'sidebar content content'1fr 'footer footer footer'1fr
+        /* column */
+        / 1fr 1fr 1fr;
+}
+
+.grid-template-area .header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+.grid-template-area .sidebar {
+    grid-area: sidebar;
+}
+
+.grid-template-area .content {
+    grid-area: content;
+}
+
+.grid-template-area .footer {
+    background-color: lightgreen;
+    grid-area: footer;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 576px) {
+    .grid-template-area {
+        grid-template-areas:
+            'header header header'
+            'sidebar sidebar sidebar'
+            'content content content'
+            'footer footer footer';
+    }
+}
+
+/*  */
+.grid-template-RowsOrColumns {
+    /* bisa mengatur horizontal & vertikal */
+    width: 800px;
+    height: 800px;
+    display: grid;
+    /*membuat 2 colom*/
+    grid-template-columns: [k1] 25% [k2] 400px;
+    /*membuat 3 baris*/
+    grid-template-rows: [b1] 200px [b2] 50% [b3] 25%;
+
+    /* hasil bentuk item 1-2, 3-4, 5-6, 7-8, 9 
+    explicit grid = kita menentukan ukuran kolom dan baris
+    hasil explicit grid: 1-2, 3-4, 5-6
+    emplicit grid = grid menentukan otomatis ukuran kolom dan baris  
+    hasil implicit grid: 7-8, 9 
+    */
+
+    /* mengatur grid yang implisit */
+    grid-auto-rows: 500px;
+    grid-auto-columns: 300px;
+    /* grid-auto-rows/column akan berjalan jika ada sisi yang tidak di atur oleh grid-template-rows/columns */
+    /* hasil implicit grid 7-8, 9 bisa berpindah ke atas menjadi kolom baru */
+    /* namun bentuk itemnya berubah menjadi 1-4-7, 2-5-8, 3-6-9 */
+    grid-auto-flow: column;
+}
+
+/*  */
+.grid-auto {
+    /* hanya bisa mengatu baris horizontal/vertikal saja */
+    width: 800px;
+    height: 200px;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+}
+
+/*  */
+.grid-gap {
+    /* untuk menentukan ukuran jarak antara baris dan kolom */
+    width: 800px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 10px;
+    row-gap: 10px; */
+
+    /* shorthand */
+    gap: 30px 10px;
+}

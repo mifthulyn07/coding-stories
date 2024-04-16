@@ -1,0 +1,21 @@
+p{ color: green;}
+p{ color: red;}
+/*it will befall, it means the color change into red*/
+
+
+/*0 0 0 0 = inline, id, class, element*/
+p{ color: red; }/*0001*/
+#p1{ color: green;} /*0100*/
+/*if u make this, it means the color change into red cuz #p1 more specific then p*/
+
+ol#p2 li{/*0102*/
+	color: red;
+}
+.name{/*0010 = dont make this*/
+	color: green;
+}
+ol#p2 li.name{/*0112 = make the value more weight*/
+	color: green;
+}
+
+/*fyi: befall=menimpa*/

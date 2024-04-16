@@ -1,0 +1,50 @@
+/*box-shadows: <x-offset> <y-offset> <blur> <color> <-- REQUIRED
+<x-offset>= to adjust the image distance on the x symbol (if the value is negative, it means left, if positif, it means right)
+<y-offset>= to adjust the image distance on the y symbol (if the value is negative, it means top, if positif, it means bottom)
+<blur>= blur of shadows 
+<color>= to adjust the color of the shadow 
+
+if you want to add another value, there are two optional value
+box-shadows: <inset> <x-offset> <y-offset> <blur> <spread> <color>
+<spread>= for size of shadow
+<inset>= make the shadow in the box*/
+
+div{
+	width: 100px;
+	height: 100px;
+	margin: 50px;
+	display: inline-block;
+}
+
+.one{
+	background-color: darkgreen;
+	box-shadow: 5px 5px 10px black;/*black for solid color*/
+}
+
+.two{
+	background-color: pink;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.75);/*rgba for set the opacity of the color*/
+}
+
+.three{
+	background-color: yellow;
+	box-shadow: 0px 10px 2px -6px rgba(0,0,0,.5);
+	transition: .3s;
+}
+
+.three:hover {
+	box-shadow: 0px 20px 2px -10px rgba(0,0,0,.15);
+	margin-top: 10px;
+}
+
+.four{
+	background-color: white;
+	box-shadow: inset 5px 5px 5px 5px rgba(0,0,0,.75);
+}
+
+.five{
+	background-color: cyan;
+	box-shadow: 
+			5px 5px 5px 2px rgba(255,0,0,.75),
+			-5px -5px 5px 5px rgba(0,0,0,0.3);/*u can make 2 shadows*/
+}

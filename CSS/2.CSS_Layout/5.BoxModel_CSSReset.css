@@ -1,0 +1,12 @@
+*{/*the way for use the reset*/
+	margin:0;
+	padding: 0;
+}
+/*the second way for use reset
+copast https://meyerweb.com/eric/tools/css/reset/ */
+
+div	{
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+}

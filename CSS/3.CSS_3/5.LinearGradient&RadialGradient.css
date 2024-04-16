@@ -1,0 +1,53 @@
+/*it uses the property of background-image and background*/
+div{
+	width: 600px;
+	height: 300px;
+	margin: 50px auto;
+}
+/*LinearGradient==================================================================================
+1.linear-gradient= draw a color gradient in a straight line
+2.linear-gradient is not css3 property, but value for background-image
+3.xyntax: background-image/ background: linear-gradient(<warna awal>, <warna akhir>)
+4.u can change the direction, linear-gradient(angle/direction, color1, color2)
+the direction: to bottom, to top, to left, to right, to left top, to left bottom, to right top, to right top, to right bottom*/
+.satu{
+	background: linear-gradient(red, pink); 
+}
+
+.dua{/*u can add multiple color*/
+	background-image: linear-gradient(red, #f0d606, rgba(255,255,0,1), green);
+}
+
+.tiga{/*use angle*/
+	background: linear-gradient(-45deg, coral, yellow);
+}
+
+.empat{/*this is color stop*/
+	background: linear-gradient(to left top, black 43%, purple 70%);
+}
+.lima {
+	background: linear-gradient(black 10%, yellow 60%);
+}
+/*radial-gradient==================================================================================================
+radial gradient= give a circular color gradient
+syntax: background-image/background: radial-gradient(<warna-awal>, <warna-akhir>);
+completesintax: background-image: radial-gradient(<tipe> <range> at <y-position> <x-position>, <color1>, <color2>, <colorn>
+tipe of gradient: ellipse & circle
+range: distance from center to outside(closest-corner, closest-side, farthest-corner, farthest-side)
+y-position: top, center,bottom, px
+x-position: left, center, right, px*/
+.A{
+	background-image: radial-gradient(ellipse closest-side, red, blue);
+}
+
+.B{/*u can add multiple color*/
+	background-image: radial-gradient(circle farthest-corner, red, blue, green, yellow);
+}
+
+.C{/*this is color stop*/
+	background-image: radial-gradient(circle, green 50%, blue 60%);
+}
+
+.D{
+	background-image: radial-gradient(circle farthest-side at top left, green 38%, blue);
+}

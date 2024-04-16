@@ -1,0 +1,37 @@
+/*we must use .woff in web font, there are 2 ways
+ex: use font squirrel
+first way: do not use font generator
+open font squirel --> choose font --> webfont kit --> we can download format font(recommended for web using WOFF) --> download
+after download --> webFonts--> choose --> just choose .woff 
+*/
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../../0.OtherStuff/font/Font2/web fonts/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "open_sanslight", new roman;
+}
+
+/*second ways: use font generator for change ttf/otf to woff
+open font squirel --> generator --> upload -> optimal and agrement --> download
+*/
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../../0.OtherStuff/font/Font3/alexbrush-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "alex_brushregular", new roman;
+}

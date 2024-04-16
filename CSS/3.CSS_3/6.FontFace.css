@@ -1,0 +1,39 @@
+/*1.font fase use to manage the font
+2.font must be in opetation system client/user 
+3.servis fonts: 
+-https://fonts.google.com/
+-fontsquirell.com
+-fontspring.com
+-webtype.com
+-typotheque.com
+4.syntax: 
+@font-face{
+	font-family: 'namaFontBaru';
+	src: url('lokasi/file/fontBaru.eot');
+	src: url('lokasi/file/fontBaru.eot?#iefix') format('embedded-oppentype'),
+		url('lokasi/file/fontBaru.woff2') format('woff2'),
+		url('lokasi/file/fontBaru.woff') format('woff'),
+		url('lokasi/file/fontBaru.ttf') format('truetype'),
+		url('lokasi/file/fontBaru.svg#svgFontName') format('svg');
+}
+a nice font for web is WOFF
+*/
+h1 {
+	/*use google font*/
+	font-size: 100px;
+	text-align: center;
+	font-family: 'New Tegomin', serif;
+}
+
+@font-face {
+	/*use font face*/
+	font-family: "alex brush";
+	src: url('../../0.OtherStuff/font/Font1/AlexBrush-Regular.ttf') format('truetype');
+}
+
+h2 {
+	font-size: 100px;
+	text-align: center;
+	font-family: "alex brush", arial;
+
+}

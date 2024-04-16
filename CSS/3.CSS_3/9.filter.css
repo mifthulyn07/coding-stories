@@ -1,0 +1,25 @@
+/*1.filter: css3's property, it use for give visual effect on the picture, background, or border 
+2.filter: <tipe-filter>;
+3. filter:
+blur(px)
+brightness(angka| %)
+contrast(angka| %)
+saturate(angka| %)
+grayscale(angka| %) 
+sepia(angka| %) 
+hue-rotatae(deg)
+invert(angka| %)
+opacity(angka| %)
+drop-shadow(sama seperti box-shadows)
+4. if u want to know the value, visit http://github.khronos.org/siggraph2012course/CanvasCSSAndWebGL/demos/CSS_Filters.htm*/
+h1{
+	font-size: 200px;
+	filter: drop-shadow(30px 30px 15px black);/*it can use for sentence, its fleksible than box-shadow and text-shadow*/
+}
+
+img{
+	/*filter: blur(3px); */
+	/*filter: brightness(1);*/
+	/*filter: hue-rotate(100deg);*/
+	filter: hue-rotate(100deg) drop-shadow(30px 30px 15px black);/*x, y, blur, color*/
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Classes</title>
+    <!-- cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .heading{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <button id="addclass">Add Class to change color Heading 1</button>
+    <button id="removeclass">Remove Class to change color Heading 1</button>
+
+    <hr>
+    <h2>Heading2</h2>
+    <button id="toggleclass">Toggle Class to change color Heading 1</button>
+
+    <hr>
+    <div class="heightwidth" style="height:150px;width:500px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+    <button id="heightwidth">Display dimensions of div</button>
+    <button id="setheightwidth">resize div</button>
+    <button id="documentwindow">dimensions of document and window</button>
+
+    
+    <script>
+        $(document).ready(function(){
+            // ==CSS CLASSES
+                // add class 
+                $("#addclass").click(function(){
+                    $('h1').addClass("heading");
+                });
+                // remove class 
+                $("#removeclass").click(function(){
+                    $('h1').removeClass("heading");
+                });
+                // toggle class 
+                $("#toggleclass").click(function(){
+                    $('h2').toggleClass("heading");
+                });
+            // ==DIMENSIONS
+                // height and width 
+                $("#heightwidth").click(function(){
+                    var txt = "";
+                    txt += "Width of div: " + $(".heightwidth").width() + "</br>";
+                    txt += "Height of div: " + $(".heightwidth").height() + "</br>";
+                    txt += "innerWidth of div (include padding): " + $(".heightwidth").innerWidth() + "</br>";
+                    txt += "innerHeight of div (include padding): " + $(".heightwidth").innerHeight() + "</br>";
+                    txt += "outerWidth of div (include padding & border): " + $(".heightwidth").outerWidth() + "</br>";
+                    txt += "outerHeight of div (include padding & border): " + $(".heightwidth").outerHeight() + "</br>";
+                    txt += "outerWidth(true) of div (include padding & border & margin): " + $(".heightwidth").outerWidth(true) + "</br>";
+                    txt += "outerHeight(true) of div (include padding & border & margin): " + $(".heightwidth").outerHeight(true);
+                    $(".heightwidth").html(txt).css('fontSize', '13px');
+                });
+                // window and document
+                $("#documentwindow").click(function(){
+                    var txt = "";
+                    txt += "Document width/height: " + $(document).width();
+                    txt += "x" + $(document).height() + "\n";
+                    txt += "Window width/height: " + $(window).width();
+                    txt += "x" + $(window).height();
+                    alert(txt);
+                });
+                // set width & height
+                $("#setheightwidth").click(function(){
+                    $(".heightwidth").width(350).height(200);
+                });
+        });
+    </script>
+</body>
+</html>

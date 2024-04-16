@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector & Events</title>
+    <!-- cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- internal -->
+    <!-- <script src="jquery.js"></script> -->
+</head>
+<body>
+    <h1>if u click me, i will show alert and change color</h1>
+    <div id="box1">if u double click me i will dissapear</div>
+    <div class="boxes">if u touch me, i will change color</div>
+    <div class="boxes">if u touch me, i will change color</div>
+    <div class="boxes">if u touch me, i will change color</div>
+    
+    <script>
+        // short code ready jquery 
+        // $(function(){ /*write your code here..*/ });
+
+        $(document).ready(function(){
+            // jQUERY SELECTOR
+                // element 
+                $('h1').css('color', 'green');
+                // id 
+                $('#box1').css('color', 'yellow');
+                // class 
+                $('.boxes').css('color', 'red');
+                // first class 
+                $('.boxes:first').css('color', 'pink');
+                // last class 
+                $('.boxes:last').css('color', 'purple');
+                // request index class 
+                $('.boxes:eq(1)').css('color', 'cyan');//0,1,2,3
+                // for more "https://www.w3schools.com/jquery/jquery_selectors.asp"
+
+            // JQUERY EVENT
+                // click 
+                $('h1').click(function(){
+                    alert('you clicked me');
+                });
+                // mouse sentuh bawah
+                $('h1').mousedown(function(){
+                    $(this).css('color', 'blue');
+                });
+                // double click and hide 
+                $('#box1').dblclick(function(){
+                    $(this).hide();
+                });
+                // mutiple event handler 
+                $(".boxes").on({
+                    // mouse sentuh 
+                    mouseenter: function(){
+                        $(this).css('color', 'black');
+                    },
+                    // leave mouse
+                    mouseleave: function(){
+                        $(this).css('color', 'red');
+                    }
+                });
+                // for more "https://www.w3schools.com/jquery/jquery_events.asp"
+        });
+    </script>
+</body>
+</html>

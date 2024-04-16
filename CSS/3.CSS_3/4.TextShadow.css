@@ -1,0 +1,154 @@
+/*text-shadow: <x-offset> <y-offset> <blur> <color>
+box shadow do not have <inset> and <spread>
+example of text shadow https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGFYX1RSa09SU05mT3ZYY1R2MV9oRGE1NnU2d3xBQ3Jtc0tuLXJWOU9PMzZtWnVWTTJCclhzVlQyR0NlaXBFVlE4Yl81akJtNnV0VWptZFU0RHZmLXRLa2k3bUM0SDgtanA5ekhHY084TDJSZ2oyMk9HdlUxSmctcXc5WFBJMlZTT3VWNHV5OGg5cXFsMGNucW05bw&q=http%3A%2F%2Fcodepen.io%2Fwebprogrammingunpas%2Fpen%2FYWyjjP*/
+h1{
+	font-size: 100px;
+	font-family: arial;
+	text-align: center;
+	text-shadow: 5px 5px 5px green,
+		-5px -5px 5px red;
+}
+
+h2{
+	font-size: 100px;
+	font-family: arial;
+	text-align: center;
+	color: #666;
+	text-shadow: 0 1px 1px white;
+}
+
+/*contoh box shadows*/
+body {
+		width: 840px;
+		margin:50px auto;
+		font-family: arial;
+		font-size: 6.5em;
+		font-weight: bold;
+		background: black;
+	}
+
+	div {
+		height: 210px;
+		margin-bottom: 100px;
+		line-height: 200px;
+		text-align: center;
+	}
+
+	.teks1 {
+		color: white;
+		text-shadow: 0 0 20px yellow;
+	}
+
+	.teks2 {
+		background: #666;
+		color: #222;
+		text-shadow: 0 1px 1px white;
+	}
+
+	.teks3 {
+		background: #def;
+		color: rgba(10,60,150, 0.8);
+	    text-shadow: 1px 4px 6px #def, 
+	    			 0px 0px 0px #000, 
+	    			 1px 4px 6px #def;
+	}
+
+	.teks4 {
+		font-weight: normal;
+		color: white;
+		text-shadow: 0 0 10px #fff, 
+					 0 0 20px #fff, 
+					 0 0 30px #fff, 
+					 0 0 40px #ff00de, 
+					 0 0 70px #ff00de, 
+					 0 0 80px #ff00de, 
+					 0 0 100px #ff00de, 
+					 0 0 150px #ff00de;
+	}
+
+	.teks5 {
+		color: white;
+		margin-top: 100px;
+		text-shadow: 0 0 20px #fefcc9, 
+					 10px -10px 30px #feec85,
+					  -20px -20px 40px #ffae34, 
+					  20px -40px 50px #ec760c, 
+					  -20px -60px 60px #cd4606, 
+					  0 -80px 70px #973716, 
+					  10px -90px 80px #451b0e;
+	}
+
+	.teks6 {
+		background: #0e8dbc;
+	  	color: white;
+	  	text-shadow: 0 1px 0 #ccc,
+	               	 0 2px 0 #c9c9c9,
+	               	 0 3px 0 #bbb,
+	               	 0 4px 0 #b9b9b9,
+	               	 0 5px 0 #aaa,
+	               	 0 6px 1px rgba(0,0,0,.1),
+	               	 0 0 5px rgba(0,0,0,.1),
+	               	 0 1px 3px rgba(0,0,0,.3),
+	               	 0 3px 5px rgba(0,0,0,.2),
+	               	 0 5px 10px rgba(0,0,0,.25),
+	               	 0 10px 10px rgba(0,0,0,.2),
+	               	 0 20px 20px rgba(0,0,0,.15);
+	}
+
+	.teks7 {
+		background-color: #3a50d9;
+	  	color: #e0eff2;
+	  	font-style: italic;
+	  	font-weight: bold;
+	  	font-family: georgia;
+	  	text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+	}
+
+	.teks8 {
+		background-color: #fff;	
+		  color: #202c2d;
+		  text-shadow:
+		    0 1px #808d93,
+		    -1px 0 #cdd2d5,
+		    -1px 2px #808d93,
+		    -2px 1px #cdd2d5,
+		    -2px 3px #808d93,
+		    -3px 2px #cdd2d5,
+		    -3px 4px #808d93,
+		    -4px 3px #cdd2d5,
+		    -4px 5px #808d93,
+		    -5px 4px #cdd2d5,
+		    -5px 6px #808d93,
+		    -6px 5px #cdd2d5,
+		    -6px 7px #808d93,
+		    -7px 6px #cdd2d5,
+		    -7px 8px #808d93,
+		    -8px 7px #cdd2d5;
+	}
+
+	.teks9 {
+		color: #92a5de;
+		  background: red;
+		  text-shadow:0px 0px 0 rgb(137,156,213),1px 1px 0 rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+	}
+
+	.teks10 {
+		color: #333;
+		background: white;
+		text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+	}
+
+	.teks11 {
+		background-color: #6CFAFC;
+		color: white;
+		text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+	}
+
+	.teks12 {
+		background-color: #629552;
+		color: rgba(0,0,0,0.6);
+		text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+	}

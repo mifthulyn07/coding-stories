@@ -1,0 +1,51 @@
+/*PSEUDO CLASS================================================================================================================================================
+/*A.pseudo class associate with the link
+1.:link= default styles for a link
+2.:hover= style when locate of mouse kursor is over a link or element
+3.:active= style when a link active
+4.:visited: style when a link have ever been visited before(use the same browser)*/
+.p1:hover{
+	font-size: 20px;
+	color: coral;
+}
+
+.p2:active{
+	font-style: italic;
+	color: green;
+}
+
+.p3:link{
+	font-style: italic;
+}
+
+.p4:visited{
+	color: red;
+}
+/*B.pseudo class associate with the position element(1)
+1.:first-child= chose element from a parent;
+2.:last-child= chose the last element from a parent;
+3.:nth-child= chose element to-n from a parent*/
+ul li:first-child a{
+	color: green;
+}
+
+ul li:nth-child(2) a:hover{/*2n, 3n, 3n-1*, even=genap, odd=ganjil*/
+	color: orange;
+}
+
+ul li:last-child a{
+	color: yellow;
+}
+/*C.pseudo class associate with the position element(2)
+1.:first-of-type= chose the first element from a type or tag type;
+2.:last-of-type= chose the last element from a type or tag type;*/
+p:first-of-type{
+	color: purple;
+}
+p:last-of-type{
+	color: coral;
+}
+
+
+/*fyi
+associate=berhubungan*/

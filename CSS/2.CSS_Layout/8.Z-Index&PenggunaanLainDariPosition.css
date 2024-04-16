@@ -1,0 +1,63 @@
+body{
+	height: 2000px;
+
+}
+.one, .two, .three{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+.one{
+	background-color: coral;
+	margin: 100px;
+	z-index: 1;
+}
+
+.two{
+	background-color: yellow;
+	top: 200px;
+	left: 200px;
+	z-index: 3;
+}
+
+.three{
+	background-color: lightgreen;
+	top: 300px;
+	left: 300px;
+	z-index: -2;
+}
+
+.kotak{
+	height: 50px;
+	background-color: skyblue;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.iklan{
+	background-color: black;
+	position: fixed;
+	top: 200px;
+	right: 100px;
+	left: 100px;
+	bottom: 200px;
+	z-index: 5;
+	opacity: 0.7;
+}
+
+.close{
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 2px solid black;
+	z-index: 5;
+	border-radius: 50%;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+
+}

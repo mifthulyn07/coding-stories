@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-ORDER & FLEX-GROW-</title>
+    <link rel="stylesheet" href="1.Order.css">
+</head>
+<body>
+    <!-- ORDER -->
+	<h1>order</h1>
+    <p>mengurutkan item sesuai kemauan kita. jika salah satu di order, maka semuanya harus di order juga, agar item yang tidak di order tidak berada di depan.</p>
+    <p>item 4&5 berada paling depan karena tidak di order.</p>
+	<div class="order">
+		<ul>
+			<li class="item1">1</li>
+			<li class="item2">2</li>
+			<li class="item3">3</li>
+			<li class="item4">4</li>
+			<li class="item5">5</li>
+		</ul>
+	</div>
+    <!-- FLEX-GROW -->
+	<h1>flex-grow</h1>
+    <p>memberi ukuran pada item dengan membandingkan antar flex</p>
+	<div class="flex-grow">
+		<ul>
+			<li class="item1">1</li>
+			<li class="item2">2</li>
+			<li class="item3">3</li>
+			<li class="item4">4</li>
+			<li class="item5">5</li>
+		</ul>
+	</div>
+    <!-- FLEX-SHRINK -->
+	<h1>flex-shrink</h1>
+    <p>disaat menyusutkan ukuran layar seperti memperkecil layar, salah satu item tidak menyusut seperti item lain. ukurannya mulai dari 0-1. 0 merupakan ukuran yang tidak bisa di nyusutkan</p>
+    <p>lihat item4, tidak akan menyusut kecuali kalau semua sudah menyusut luan. item4 akan menyusut kebelakangan.</p>
+	<div class="flex-shrink">
+		<ul>
+			<li class="item1">1</li>
+			<li class="item2">2</li>
+			<li class="item3">3</li>
+			<li class="item4">4</li>
+			<li class="item5">5</li>
+		</ul>
+	</div>
+    <!-- FLEX-BASIS -->
+	<h1>flex-basis</h1>
+    <p>mengubah ukuran flex persatuan</p>
+	<div class="flex-basis">
+		<ul>
+			<li class="item1">1</li>
+			<li class="item2">2</li>
+			<li class="item3">3</li>
+			<li class="item4">4</li>
+			<li class="item5">5</li>
+		</ul>
+	</div>
+</body>
+</html>

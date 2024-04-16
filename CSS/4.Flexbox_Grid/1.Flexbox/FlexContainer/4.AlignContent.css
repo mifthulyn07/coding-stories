@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0px 0px;
+}
+
+p {
+    margin: 10px;
+}
+
+h3 {
+    margin: 30px 0px 10px;
+}
+
+.container {
+    width: 80%;
+    border: 5px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container div {
+    text-align: center;
+    margin: 10px;
+}
+
+.container div ul {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    list-style: none;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div ul li {
+    width: 300px;
+    height: 25px;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 0.5m;
+    line-height: 25px;
+    text-align: center;
+}
+
+.container div ul li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+/* ALIGN-CONTENT */
+/* flex-direction: row */
+.align-content .flex-start {
+    align-content: flex-start;
+    /* align-content: left; */
+    /* align-content: start; */
+}
+
+.align-content .flex-end {
+    align-content: flex-end;
+    /* align-content: right; */
+    /* align-content: end; */
+}
+
+.align-content .center {
+    align-content: center;
+}
+
+.align-content .space-between {
+    align-content: space-between;
+}
+
+.align-content .space-around {
+    align-content: space-around;
+}
+
+.align-content .space-evenly {
+    align-content: space-evenly;
+}
+
+.align-content .stretch {
+    align-content: stretch;
+}
+
+/* flex-direction: column */
+.column ul {
+    flex-direction: column;
+}
+
+.column div ul li {
+    height: 100%;
+    width: 25px;
+}

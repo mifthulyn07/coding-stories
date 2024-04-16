@@ -1,0 +1,19 @@
+/*INHERITANCE====================================================================================================================
+PROPERTI YANG DIWARISI
+1.color
+2.font
+3.letter-spacing
+4.line-height
+5.list-style
+6.text-align
+7.text-indent
+8.text-transform
+9.visibility
+10.white-space 
+*/
+body{
+	font-family: arial;
+	color: darkgreen;
+}
+/*if u want to change color of link u must give a sign of the link that link is a intheritance*/
+a {color: inherit;}/*link do not inherit, u must give a value inherit in link*/

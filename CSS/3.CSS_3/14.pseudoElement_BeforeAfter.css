@@ -1,0 +1,184 @@
+/* content bisa bersisi*/
+/* 1.image, harus resize manual--> content: url(); */
+/* 2.string --> content: "tulisan"; */
+/* 3.kosong, bisa untuk clearfix --> content: ""; */
+/* 4.counter, untuk memberi style pada list --> content: counter(item); */
+
+.first {
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.first::before {
+    /*menambahkan teks di dalam div*/
+    content: "::before";
+    /* div&height menambahkan element baru yang berisi tulisan */
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.first::after {
+    /*menambahkan teks di dalam div*/
+    content: "::after";
+    /* div&height menambahkan element baru yang berisi tulisan */
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*  */
+h1 {
+    display: flex;
+    background-color: chocolate;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 5px;
+    font: normal;
+}
+
+h1::after {
+    content: url(../../0.gambar/telegramCopy.png);
+    /* harus ditambahkan flex agar sesuai align item */
+    display: flex;
+}
+
+h1::before {
+    /* kode simbol dari bentuk font */
+    content: '\102';
+    font-family: 'Shizuru', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+p {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a::after {
+    content: " /";
+}
+
+/* menambahkan tanda titik dua di depan */
+a:first-child::before {
+    content: ':: ';
+}
+
+/* menghilangkan tanda garing di belakang */
+a:last-child::after {
+    content: '';
+}
+
+
+
+
+
+
+/*  */
+/* tanda kutip bisa di custom */
+blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote::before,
+blockquote::after {
+    content: open-quote;
+    color: red;
+    font-size: 50px;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+
+
+
+
+
+
+
+/*  */
+/* dipake untuk tanda panah saja  */
+.second {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+
+.second::before {
+    content: '';
+    position: absolute;
+    border-top: 12px solid blue;
+    border-bottom: 12px solid red;
+    border-right: 12px solid yellow;
+    border-left: 12px solid green;
+    width: 0px;
+    height: 0px;
+    top: -10px;
+    left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*banyak lagi*/

@@ -1,0 +1,20 @@
+/*padding do not (-) value
+padding have no auto value
+the padding value can change
+if u add padding, then the value of weight and height will increase
+
+border: width style color;
+border have 4 style(solid, dotted, dashed, double)
+if u make border then the size will increase the size 
+*/
+div{
+	background-color: coral;
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+	padding-left: 40px;
+	padding-top: 20px;
+	border: 5px double black;
+	border-left: 10px dotted white;
+}
+

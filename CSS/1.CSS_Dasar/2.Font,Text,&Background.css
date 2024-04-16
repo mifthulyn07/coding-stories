@@ -1,0 +1,70 @@
+/*FONT STYLES===================================================================================================================================
+font-family: set the type to be used  
+font-size: set the size font 
+font-weight: set the thick font
+font-variant: change font to small caps or normal
+font-style: change font to italicize
+line-height: set the space between lines*/
+
+.fontstyle h1{ font-family:times new roman, serif;/*arial and verdana,times new roman are font name and sans-serif and serif are generic family, sans-serif is fonts that have no legs and serif is fonts that have legs*/
+	font-size: 40px;/*font size has unit px,%,em, and pt*/
+	font-weight: bold;/*font-weight has 5 options, that is lighter, normal, 100-900, bold, and bolder*/
+	font-variant: small-caps;/*font-fariant has 2 option that is small-caps and normal*/
+	font-style: inherit;/*font-style has 3 options that is normal, italic,and oblique*/
+}
+.fontstyle p{
+	font-family: arial, verdana, sans-serif;
+	/*font-family can used 2 fonts, if it has no font arial then outomatic directly using verdana font, if it has still no arial and verhana then using generic family*/
+	line-height: 40px;/*Line-height has 3 options, that is normal, px and em*/
+}
+
+/*if you want a quick way, you can use 
+h1{
+	font: font-style font-variant font-weight font-size line-height font-family;}
+mandatory use line-height and font-family*/
+	
+/*fyi:
+-mandatory=wajib
+-thick=tebal
+-directly=langsung
+-then=maka
+*/
+/*TEXT STYLES======================================================================================================================================================
+color: give color to the script
+text-align: set the text format
+text-indent: give indentation to pharagraf
+text-decoration: set text decoration
+text-transform: change the type of alphabet into uppercase or lowercase
+letter-spicing: set space of alphabet
+word-space: set space of word*/
+
+.textstyle h1{
+	color: gray;/*u can use the colorname(coral), hexadecimal(#ff0000), RGB(rgb(32,178,170)) www.colorpicker.com*/
+	text-decoration: underline;/*4 sypes of text-decoration: none, underline, overline, line-through*/
+	text-transform: capitalize;/*4 text-transform types: none, lowercase, uppercase,capitalize*/
+}
+.textstyle p{
+	text-align: justify;/*4 text-align types: left, right, center, justify*/
+	word-spacing: 4px;/*there are 2 unit of word spacing: normal & px*/
+	text-indent: 40px;
+	letter-spacing: 2px;
+}
+/*BACKGROUND====================================================================================================================================================
+background-color: give a color the background
+background-image: use background;
+background-position: set image position;
+background-repeat: set the repeat of image/background;
+*/
+body{
+	background-color: pink;/*color names or 6 digit hexadecimal*/
+	background-image: url(../../../../DCIM/Wallpapers/like.jpg);/*subtlepatterns.com*/
+	background-repeat: no-repeat;/*repeat-x, repeat-y, no-repeat*/
+	background-position: right;/*top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right/x%, y%/x-pos y-pos*/
+}
+/*if you want a quick way, you can use 
+body{
+	background: color url() position repeat;}
+
+fyi:
+-axis=terhadap
+*/

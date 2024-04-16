@@ -1,0 +1,72 @@
+/* special function & Keywords
+1. repeat() = menentukan ukuran grid track secara berulang
+2. min-content & max-content = menentukan seberapa besar ukuran grid track bedasarkan content pada sebuah item
+3. auto fill & auto fit = menentukan jumlah item untuk berada pada grid track 
+4. minmax() = menentukan ukuran minimal dan maximal dari grid track
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 100px auto 10px;
+}
+
+.item {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.item:nth-child(even) {
+    background-color: skyblue;
+}
+
+/*  repeat() = menentukan ukuran grid track secara berulang */
+.repeat {
+    width: 80%;
+    display: grid;
+    /* artinya buat 5 kolom dengan ukuran 150px secara berulang ulang */
+    grid-template-columns: repeat(5, 1fr) repeat(4, 1.5fr);
+}
+
+/* min-content & max-content = menentukan seberapa besar ukuran grid track bedasarkan content pada sebuah item */
+.minOrMaxContent {
+    width: 80%;
+    display: grid;
+    /* min-content akan membuat ukurannya mengikuti ukuran mininal isi di dalam item, spasi juga tidak berpengaruh di min-content */
+    /* max-content akan membuat ukurannya mengikuti ukuran maximal isi di dalam item, spasi berpengaruh di max-content */
+    grid-template-columns: min-content max-content 1fr;
+}
+
+/* auto fill & auto fit = menentukan jumlah item untuk berada pada grid track */
+.autoFillOrFit {
+    border: 1px solid black;
+    width: 80%;
+    display: grid;
+    /* auto-fill & auto-fit mengisi ukuran yang kosong, jika ukuran tidak cukup dia turun ke bawah, jika ukurannya cukup dia naik ke atas*/
+    /* perbedaannya ada di grid overlay(inspect di firefox), auto-fit tidak akan merekomendasikan tempat yang masih cukup untuk diisi, sedangkan auto fill sebaliknya  */
+    grid-template-columns: repeat(auto-fit, 150px);
+}
+
+/* minmax = menentukan ukuran minimal dan maximal dari grid track  */
+.minmax {
+    width: 80%;
+    display: grid;
+    /* jika di responsive kan dia akan berukuran minimal 300px dan maximal 500px */
+    grid-template-columns: 400px minmax(300px, 500px) 400px;
+}

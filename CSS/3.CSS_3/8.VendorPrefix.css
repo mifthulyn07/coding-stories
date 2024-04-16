@@ -1,0 +1,18 @@
+/*1.VendorPrevix: special syntax to add for css3 properties;
+2. the reason we must to add vendor prefix coz do not all browser supprort CSS3 
+3.the ways to add vendor prefix
+-webkit-<properti-css3>(chrome, safari, opera new version)
+-moz-<properti-css3>(firefox)
+-ms-<properti-css3>(internet Explorer)
+-o-<properti-css>(opera old version)
+4.property CSS3 need vendor prefix: shouldiprefix.com, caniuse.com(this is more complete),http://pleeease.io/play/, use emmet(klik tab before ":");
+
+*/
+body{
+	text-align: center;
+}
+
+img{
+	-webkit-filter: grayscale(100%);/*for chrome support this filter in css3*/
+	filter: grayscale(100%);/*chrome do not support but firefox support*/
+}

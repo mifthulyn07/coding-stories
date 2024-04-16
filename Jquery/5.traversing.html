@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+    <!-- cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .traversing * { 
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }    
+    </style>
+</head>
+<body>  
+    <div class="traversing">
+        <div style="width:500px;">div (great-grandparent)
+          <ul>ul (grandparent)
+            <li>li (direct parent) >> bg-yellow >> mencari li pertama >> first()
+              <span class="parents" style="color:green;border:2px solid green;">spanc(child) >> start >> contoh parents()</span>
+            </li>
+          </ul>   
+        </div>
+    </div>  
+    <div class="traversing">
+        <div style="width:500px;">div (great-grandparent)
+          <ul>ul (grandparent)  
+            <li>li (direct parent)
+              <span class="parentsuntil" style="color:green;border:2px solid green;">spanc(child) >> start >> contoh parentsUntil()</span>
+            </li>
+          </ul>   
+        </div>
+    </div>  
+    <div class="traversing">
+        <div style="width:500px;">div (great-grandparent)
+          <ul>ul (grandparent)  
+            <li>li (direct parent)
+              <span class="parent" style="color:green;border:2px solid green;">spanc(child) >> start >> contoh parent()</span>
+            </li>
+          </ul>   
+        </div>
+    </div>
+    <div class="traversing">
+        <div style="width:500px;">div (great-grandparent)
+          <ul class="children" style="color:green;border:2px solid green;">ul (grandparent) >> start >> contoh children()
+            <li>li (direct parent)   >> bg-yellow >> mencari li request >> eq(3)
+              <span>spanc(child)</span>
+            </li>
+          </ul>   
+        </div>
+    </div>
+    <div class="traversing">
+        <div style="width:500px;">div (great-grandparent)
+          <ul class="find" style="color:green;border:2px solid green;">ul (grandparent) >> start >> contoh find()
+            <li>li (direct parent)  >> bg-yellow >> mencari li terakhir >> last()
+              <span>spanc(child)</span>
+            </li>
+          </ul>   
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h2 class="siblings" style="color:green;border:2px solid green;">h2 >> start >> contoh siblings()</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h2 class="next" style="color:green;border:2px solid green;">h2 >> start >> contoh next() >> bg-yellow contoh filter()</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h2 class="nextall" style="color:green;border:2px solid green;">h2 >> start >> contoh nextAll()</h2>
+            <h3>h3</h3>
+            <p>p</p>
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h2 class="prev" style="color:green;border:2px solid green;">h2 >> start >> contoh prev()</h2>
+            <h3>h3</h3>
+            <h4>h4 >> bg-yellow contoh not()</h4>
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h2 class="prevall" style="color:green;border:2px solid green;">h2 >> start >> contoh prevAll()</h2>
+            <h3>h3</h3>
+            <h4 class="h4">h4</h4>
+        </div>
+    </div>
+    <div class="traversing">
+        <div>div (parent) 
+            <p>p</p>
+            <span>span</span>
+            <h6>h6</h6>
+            <span>span</span>
+            <h2 class="prevuntil" style="color:green;border:2px solid green;">h2 >> start >> contoh prevUntil()</h2>
+            <h3>h3</h3>
+            <h4 class="h4">h4</h4>
+            <h5>h5</h5>
+            <p>p</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // ==TRAVERSING >> artinya melintasi digunakan untuk menemukan elemen HTML bedasarkan ralasi mereka ke elemen lain
+                // ancestors (nenek moyang)
+                    // parents  >> semua nenek moyang element
+                    $("span.parents").parents().css({"color": "red", "border": "2px solid red"});
+                    // parentUntil >> semua nenek moyang sampai parameter yang di tuju
+                    $("span.parentsuntil").parentsUntil('div').css({"color": "red", "border": "2px solid red"});
+                    // parent >> ibu
+                    $("span.parent").parent().css({"color": "red", "border": "2px solid red"});
+                // Descedatsc (anak cucu)
+                    // children >> anak
+                    $("ul.children").children().css({"color": "red", "border": "2px solid red"});
+                    // find >> cari anakkan/cucu
+                    $("ul.find").find("*").css({"color": "red", "border": "2px solid red"});
+                // siblings 
+                    // siblings >> sodara kandung
+                    $("h2.siblings").siblings().css({"color": "red", "border": "2px solid red"});
+                    // next
+                    $("h2.next").next().css({"color": "red", "border": "2px solid red"});
+                    // nextAll
+                    $("h2.nextall").nextAll().css({"color": "red", "border": "2px solid red"});
+                    // nextUntil
+                    $("h2.nextuntil").nextUntil('h5').css({"color": "red", "border": "2px solid red"});
+                    // prev
+                    $("h2.prev").prev().css({"color": "red", "border": "2px solid red"});
+                    // prevAll
+                    $("h2.prevall").prevAll().css({"color": "red", "border": "2px solid red"});
+                    // prevUntil
+                    $("h2.prevuntil").prevUntil('p').css({"color": "red", "border": "2px solid red"});
+                // filtering
+                    // first >> mencari element pertama
+                    $("li").first().css("background-color", "yellow");
+                    // last
+                    $("li").last().css("background-color", "yellow");
+                    // eq
+                    $("li").eq(3).css("background-color", "yellow");
+                    // filter 
+                    $("h2").filter('.next').css("background-color", "yellow");
+                    // not 
+                    $("h4").not('.h4').css("background-color", "yellow");
+                
+
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* istilah-istilah pada grid
+1. grid container: element pembungkus grid. co: display: grid;
+2. grid item: elemen yang berada 1 level di dalam grid cotainer
+3. grid line: garis vertikal atau horizontal yang memisahkan grid menjadi beberapa bagian dan ditandai dengan angka
+4. grid cell: perpotongan/pertemuan antara baris dan kolom
+5. grid area: kumpulan lebih dari 1 cell membentuk kotak
+6. grid track: ukuran/jarak antara 2 grid line, vertikal/horizontal 
+7. grid gap: spasi/jarak anrata cell, seperti cell spacing
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    width: 1000px;
+    border: 5px solid black;
+    margin: 50px auto;
+    padding: 5px;
+    display: grid;
+    grid-template-areas:
+        /*(b1,c1) (b1,c2)*/
+        "header header"
+        /*(b2,c1) (b2,c2)*/
+        "aside main"
+        /*(b3,c1) (b3,c2)*/
+        "nav main"
+        /*(b4,c1) (b4,c2)*/
+        "footer footer";
+    /* untuk ukuran colom 1 ukuran kolom kiri dan 1.5 ukuran kolom kanan */
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 3fr 3fr 5fr 1fr;
+}
+
+.container * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: coral;
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+    background-color: pink;
+}
+
+nav {
+    grid-area: nav;
+    background-color: green;
+}
+
+main {
+    grid-area: main;
+    background-color: yellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}

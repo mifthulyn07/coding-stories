@@ -1,0 +1,53 @@
+/*position's value: static, relative, absolute, fixed*/
+/*relative will not shift another element, there is still room left*/
+/*absolute will shift another element, there is not still room left*/
+body {
+  height: 2000px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.container {
+  width: 600px;
+  height: 1000px;
+  border: 4px solid black;
+  position: relative; /*we must add also position in the parent for div.empat*/
+}
+
+.satu {
+  background-color: lightgreen;
+  position: relative;
+  left: -240px;
+  top: 40px;
+}
+
+.dua {
+  background-color: yellow;
+  position: relative;
+  top: 0px;
+  left: 0px; /*move according to its place*/
+}
+
+.tiga {
+  background-color: pink;
+}
+
+.empat {
+  background-color: coral;
+  position: absolute; /*moves according to its parent*/
+  top: -20px;
+  left: 0px;
+}
+
+.lima {
+  background-color: skyblue;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}

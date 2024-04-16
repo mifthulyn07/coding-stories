@@ -1,0 +1,286 @@
+/*RESET=============================================================================================*/
+/* https://meyerweb.com/eric/tools/css/reset/*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*STYLE==================================================================================*/
+/*if u want to know the color https://www.w3schools.com/colors/colors_names.asp*/
+/*if u want to look for image, visit https://unsplash.com/*/
+/*if u want to add background, visit https://www.toptal.com/designers/subtlepatterns/*/
+body {
+	font: 16px/28px arial, sans-serif;
+	/*font: size/distance betweek rows font*/
+	background-color: lightgray;
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: white;
+	z-index: 1;
+}
+
+.container {
+	width: 960px;
+	margin: 80px auto;
+	background-color: white;
+	position: relative;
+	/*for twitter do not move*/
+}
+
+.twitter {
+	width: 200px;
+	height: 200px;
+	background-image: url(../../0.OtherStuff/image/icon/twit.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+}
+
+.header {
+	padding: 20px;
+	padding-bottom: 5px;
+}
+
+.header .title {
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.header ul li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.header a {
+	text-decoration: none;
+	color: gray;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: lightgray;
+	color: white;
+}
+
+.hero {
+	height: 340px;
+	background-image: url(../../0.OtherStuff/image/imageGallery/randomSizes/1.jpg);
+	background-size: cover;
+	background-position: 0px -150px;
+}
+
+.main {
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h2 {
+	font-size: 28px;
+	color: black;
+	font-weight: bold;
+}
+
+.main .writer {
+	margin-top: -2px;
+	font-size: 11px;
+}
+
+.main .writer a {
+	color: dimgrey;
+	text-decoration: none;
+
+}
+
+.main p {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+}
+
+.sidebar img {
+	width: 70px;
+	float: left;
+	padding-right: 5px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
+}
+
+.footer {
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer p.copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+/*CLEARFIX=================================================================================*/
+.cf:before,
+.cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}

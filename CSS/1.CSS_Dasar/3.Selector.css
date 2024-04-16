@@ -1,0 +1,56 @@
+/*SELECTOR================================================================================================================================================================*/
+/*selector used for indentify the elemen of HTML that will give a style 
+selectors: elemen HTML, id, class, complex selector*/
+body{
+	background-color: pink;
+	background-image: url(../../../../DCIM/Wallpapers/like.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+} 
+
+h1, h3{/*,= & in CSS*/
+	font-family:times new roman, serif;/*coma = &*/
+	font-size: 40px; 
+	font-weight: bold;
+	font-variant: small-caps;
+	font-style: inherit;
+	color: darkgreen;
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+
+h3{ /*it could change h3 and h1 to be different*/
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#p1{/*# = id in p of html*/
+	font-family: arial, verdana, sans-serif;
+	line-height: 18px;
+	text-align: left;
+	word-spacing: 3px;
+}
+/*terms of id
+1.a HTML element just can have 1 id
+2.each page just can have 1 element with the id
+3.it could use a page bookmark for the link
+4.it use for javascipt too
+4.it should not use for css*/
+
+.p2{/*. = class in p of html*/
+	font-family: arial, verdana, sans-serif;
+	text-align: right;
+	
+}
+.p3{
+	font-weight: bold;
+}
+
+ol li a{/*space = didalam (fyi=  read from right)*/
+	text-decoration: none;
+	color: black;
+}
+
+ol li{
+	color: black;
+}

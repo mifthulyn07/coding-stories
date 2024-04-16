@@ -1,0 +1,137 @@
+/*===NOTE: 
+-ImageFull: 600x800px
+-Thumbnail: 120x120px
+-font: WOFF (https://www.fontsquirrel.com/fonts/bebas-neue)
+*/
+/*===FONT*/
+@font-face {
+    font-family: 'armalite_rifleregular';
+    src: url('font/armalite_rifle-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*===STYLE*/
+body{
+	background-color: #333333;
+	font-family: 'arial narrow'; 
+}
+h1{
+	font: 60px/90px 'armalite_rifleregular';
+	margin: 50px 0px;
+	text-align: center;
+	color: #f2f2f2;
+	text-shadow: 3px 3px 3px black;
+}
+.container{
+	margin: 50px auto;
+	background-color: #f2f2f2;
+	width: 600px;
+	height: 140px;
+	box-shadow: 3px 3px 5px black;
+	border-radius: 20px;
+}
+.container ul.gallery{
+	padding: 20px 0px;
+} 
+.container ul.gallery li{
+	position: relative;
+	display: inline-block;
+	margin-left: 37px;
+}
+.container ul.gallery li a img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.container ul.gallery li a span{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	opacity: 0;
+	font-weight: bold;
+}
+.container ul.gallery li a:hover span{
+	opacity: 1;
+	transition: 0.5s;
+}
+.container ul.gallery li .overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+}
+.container ul.gallery li .overlay:target{
+	width: auto;
+	height: auto;
+	top: 0; 
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	text-align: center;
+	padding: 100px 0px;
+}
+.container ul.gallery li .overlay:target .close{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	margin-left: -20px; 
+	color: #f2f2f2;
+	text-decoration: none;
+	background-color: black;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #f2f2f2;
+	animation: slidedownfade 1s;
+}
+.container ul.gallery li .overlay:target .mainimg{
+	max-height: 100%;/*tingginya akan selalu maximal*/
+	border-radius: 5%;
+	box-shadow: 2px 2px 5px black;
+	animation: ZoomandFade 1s;
+}
+.container ul.gallery li .overlay:target .prev{
+	position: relative;
+	left: -30px;
+	top: -180px;
+}
+.container ul.gallery li .overlay:target .next{
+	position: relative;
+	right: -30px;
+	top: -180px;
+}
+.container ul.gallery li .overlay:target .prev img,
+.container ul.gallery li .overlay:target .next img{
+	width: 60px;
+	height: 60px;
+}
+/*===Animasi*/
+@keyframes ZoomandFade{
+	0%{
+		transition: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transition: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes slidedownfade{
+	0%{
+		opacity: 0;
+		margin-top: -20px;
+	}
+
+	100%{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}

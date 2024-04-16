@@ -1,0 +1,45 @@
+/*div & span are just a group */
+.p1 span{ background-color: coral; }
+
+/*div{
+	display: block;
+}
+span{
+	display: inline;
+}*/
+
+/*DISPLAY'S VALUE
+1.inline= do not add new line ex:img, b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea, dll*/
+img{/*just image that display's inline but we can set the size */
+	width:500px;
+	height:293px;
+}
+
+/*2.inline-block=can use set the size of inline*/
+.p2 a{/* a's tag is inline but we can change into inline-block*/
+	background-color: skyblue;
+	width:50px;
+	height:50px;
+	display: inline-block;
+}
+
+/*3.block= add new line, we must set the size ex:h1-h6, p, ol, ul, li, form, hr, div, ...*/
+h1, h2, h3{
+	background-color: yellow;
+}
+.p1{
+	width: 500px;
+	background-color: pink;
+}
+
+/*4.none= to use for remove an elemen. ex: i want to remove the imange*/
+img{
+	display: none;
+}
+
+/*5.change of display*/
+/* ul's display is block we can change into inline*/
+.p3 ul li{
+	display: inline-block;
+}
+

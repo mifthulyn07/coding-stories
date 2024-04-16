@@ -1,0 +1,51 @@
+/*1.animation has  several conditions 
+2.syntax: 
+@keyframes [name]{
+	from{ //initial condition
+		[property-css]
+	}
+
+	to { //end condition
+		[property-css]
+	}
+}
+3.animation's value: name, duration, timing-function, delay, iteration-count=repeat(numbers, infinite(always repeat, never stop)), direction(normal, reverse, alternate, alternate-reverse), fill-mode(none, forwards, backwards, both), play-state(running, paused);
+
+
+*/
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: coral;
+	margin: 5px;
+}
+
+.box1{ animation: boxAnimation/*name*/ 2s/*duration*/ ease/*timing-function*/ 1s/*delay*/ infinite/*iteration-count*/ reverse/*direction*/; }
+.box2{ 
+	animation-name: boxAnimation;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-iteration-count: 3; 
+	animation-direction: alternate-reverse;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes boxAnimation{
+	0% { 
+		width: 100px;
+	}
+
+	50%{
+		width: 200px;
+		height: 100px;
+	}
+
+	100% { 
+		width: 200px;
+		height: 200px;
+	}
+}

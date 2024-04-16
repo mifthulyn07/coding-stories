@@ -1,0 +1,64 @@
+/*1. transition: we use to change the value from HTML property
+2. trasition vs animation: 
+the transition has a beginning situasion and an ending situation
+animation has several situation
+3.syntax: [property] <durasi(s/ms)> [fungsi] [delay(s/ms)];
+4. there are non-animatable properties like font-family, display, position, dll
+5.[fungtion/timing function] --> ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier(w,x,y,z)
+6.[delay]: waiting time
+*/
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 900px;
+	margin: 10px auto;
+	border: 5px solid black;
+}
+
+.box{/*comparators only*/
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	color: white;
+	line-height: 100px;
+	text-align: center;
+	margin: 2px;
+}
+.box0{ transition: 3s 3s; }/*if u just use transition and delay*/
+.box1{ transition: all 3s ease 2s; }/*use delay*/
+.box2{ transition: margin-left 2s, transform 3s, background-color 3s ease-in 2s; }
+.box3{ transition: all 3s ease-out; }
+.box4{ transition: all 3s ease-in-out; }
+.box5{ transition: all 3s linear; }
+.box6{ transition: all 3s cubic-bezier(.65,.05,.36,1);/*look at in inspect*/ }
+
+.container:hover .box{/*container:hover because when cursor approach=mendekati container, then hover in action=beraksi*/
+	transform: rotate(720deg);
+	margin-left: 800px; 
+	background-color: pink;
+	color: black;
+}
+
+/*ANIMATABLE PROPERTIES
+
+-background-color
+-background-position
+-background-sizes
+-border
+-color
+-filter
+-font-size
+-line-height
+-top left bottom right
+-margin padding
+-width height
+-opacity
+-transform
+-word-spacing
+-letter-spacing*/
+

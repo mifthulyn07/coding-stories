@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <!-- cdn google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <p class="p">If you click on the "Hide" button, I will disappear.</p>
+
+    <hr>
+    <button id="toggle">Toggle between hiding and showing the paragraphs</button>
+    <h6>This is a paragraph with little content.</h6>
+    <h6>This is another small paragraph.</h6>
+
+    <hr>
+    <button class="div1">Click to fadeIn boxes</button><br><br>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+
+    <hr>
+    <button class="div2">Click to fadeOut boxes</button><br><br>
+    <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+    
+    <hr>
+    <button class="div3">Click to fadeTo boxes</button><br><br>
+    <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    
+    <hr>
+    <button class="div4">Click to fadeToggle boxes</button><br><br>
+    <div id="div4" style="width:80px;height:80px;display:none;background-color:purple;"></div>
+
+    <hr>
+    <div id="slideDown" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;">Click to slide down panel</div>
+    <div id="panel1" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;padding:50px;display:none;">Hello world!</div>
+    
+    <hr>
+    <div id="slideUp" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;">Click to slide Up panel</div>
+    <div id="panel2" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;padding:50px;">Hello world!</div>
+    
+    <hr>
+    <div id="slideToggle" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;">Click to slide Toggle panel</div>
+    <div id="panel3" style="padding:5px;text-align:center;background-color:#e5eecc;border:solid 1px #c3c3c3;padding:50px;display:none;">Hello world!</div>
+    
+    <hr>
+    <button id="animationStart">Start Animation</button>
+    <button id="animationStop">Stop Animation</button><br><br>
+    <div id="div5" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+    <br><br><br><br><br><br><br><hr>
+    <button id="callback">Hide</button>
+    <p class="parag">This is a paragraph with little content.</p>
+
+    <hr>
+    <p id="sentence">jQuery is fun!!</p>
+    <button id="chaining">Click me</button>
+
+    <script>
+        $(document).ready(function(){
+            // ==SHOW, HIDE AND TOGGLE 
+                // show and hide 
+                $("#hide").click(function(){
+                    $(".p").hide("slow");//u can change slow, fast, or milisecond(1000)
+                });
+                $("#show").click(function(){
+                    $(".p").show();
+                });
+                // toggle
+                $("#toggle").click(function(){
+                    $("h6").toggle();
+                });
+            
+            // ==FADING
+                // fadein 
+                $('button.div1').click(function(){
+                    $('#div1').fadeIn("slow");
+                });
+                // fadeout 
+                $('button.div2').click(function(){
+                    $('#div2').fadeOut(1500);
+                });
+                // fadeto 
+                $('button.div3').click(function(){
+                    $('#div3').fadeTo("slow", 0.4);
+                });
+                // fadeto 
+                $('button.div4').click(function(){
+                    $('#div4').fadeToggle("slow");
+                });
+
+            // ==SLIDING 
+                // slideDown 
+                $("#slideDown").click(function(){
+                    $("#panel1").slideDown("slow");
+                });
+                // slideUp
+                $("#slideUp").click(function(){
+                    $("#panel2").slideUp("slow");
+                });
+                // slideToggle 
+                $("#slideToggle").click(function(){
+                    $("#panel3").slideToggle("slow");
+                });
+
+            // ==ANIMATION
+                // start animation 
+                $("#animationStart").click(function(){
+                    var div = $("#div5");
+                    div.animate({height: '300px', opacity: '0.4'}, 1000);
+                    div.animate({width: '300px', opacity: '0.8'}, 500);
+                    div.animate({height: '100px', opacity: '0.4'}, "slow");
+                    div.animate({width: '100px', opacity: '0.8'}, 1500);
+                });
+                // stop animation 
+                $("#animationStop").click(function(){
+                    $("#div5").stop();
+                });
+
+            // ==CALLBACK >> digunakan setelah finish melakukan event
+                $("#callback").click(function(){
+                    $(".parag").hide("slow", function(){
+                        alert("The paragraph is now hidden");
+                    });
+                });
+            // ==CHAINING >> digunakan untuk merantai banyak event layaknya animasi 
+                $("#chaining").click(function(){
+                    $("#sentence").css("color", "red").slideUp(2000).slideDown(2000);
+                });
+        });
+    </script>
+</body>
+</html>
