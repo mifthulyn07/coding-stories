@@ -3,6 +3,7 @@ console.log("===MEMBUAT OBJEK");
 console.log("1. OBJECT LITERAL: membuat variable objek");
 //coba 1
 console.log("===coba objek literal-1===");
+// problem: tidak efektif untuk objek yang banyak, karna pembuatan objek di lakukan berulang ulang
 var mhs1 = {
   nama: "Miftahul Ulyana Hutabarat", //this is property
   tgllahir: function () {
