@@ -10,6 +10,7 @@ Below are some of my projects:
 ![3](https://github.com/mifthulyn07/coding-stories/assets/84966642/a9053e12-1619-4c1a-b23d-2472fbc2c94e)
 ![4](https://github.com/mifthulyn07/coding-stories/assets/84966642/d629e056-c97c-4bb0-a90f-c99d8fa41caf)
 ![5](https://github.com/mifthulyn07/coding-stories/assets/84966642/115fc97b-5e91-4312-8261-53ae4777909c)
+![9](https://github.com/mifthulyn07/coding-stories/assets/84966642/d6309cfa-fcd5-473d-b981-8937b9996953)
 ![6](https://github.com/mifthulyn07/coding-stories/assets/84966642/f1ad9270-aa4c-4149-b67a-27b1e726db8b)
 ![7](https://github.com/mifthulyn07/coding-stories/assets/84966642/700ce998-9f78-4dae-9ec4-a33111df751f)
 ![8](https://github.com/mifthulyn07/coding-stories/assets/84966642/d340a395-f84a-447a-ae28-edbd1d3f0727)
