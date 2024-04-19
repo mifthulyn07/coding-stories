@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'acmeregular';
+    src: url('Acme-Regular-webfont.eot');
+    src: url('Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Acme-Regular-webfont.woff2') format('woff2'),
+         url('Acme-Regular-webfont.woff') format('woff'),
+         url('Acme-Regular-webfont.ttf') format('truetype'),
+         url('Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
