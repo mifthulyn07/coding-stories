@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "2.VariableTipedataOperator", "2.VariableTipedataOperator\2.VariableTipedataOperator.vbproj", "{305AB175-6C33-4B93-8968-D9C83E2E2562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{305AB175-6C33-4B93-8968-D9C83E2E2562}.Debug|x86.ActiveCfg = Debug|x86
+		{305AB175-6C33-4B93-8968-D9C83E2E2562}.Debug|x86.Build.0 = Debug|x86
+		{305AB175-6C33-4B93-8968-D9C83E2E2562}.Release|x86.ActiveCfg = Release|x86
+		{305AB175-6C33-4B93-8968-D9C83E2E2562}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

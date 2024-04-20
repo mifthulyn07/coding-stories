@@ -1,0 +1,21 @@
+package javaapplication12;
+
+public class JavaApplication12 {
+    public static void main(String[] args) {
+        PrintAngka(15);
+        PrintAngka(15.5f);
+        System.out.println("jumlah angka ini adalah: " + PrintAngka(15.5f, 6));
+    }
+    
+    private static void PrintAngka(int AngkaInt){
+        System.out.println("angka ini adalah integer dengan nilai: " + AngkaInt);
+    }
+    
+    private static void PrintAngka(float AngkaFloat){
+        System.out.println("angka ini adalah Float dengan nilai: " + AngkaFloat);
+    }
+    
+    private static float PrintAngka(float AngkaFloat, int AngkaInt){
+        return AngkaFloat * AngkaInt;
+    }
+}

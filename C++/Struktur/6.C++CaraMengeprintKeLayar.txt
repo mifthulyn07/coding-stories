@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"ini tidak ada baris baru";
+    cout<<"ini ada baris baru"<<endl;
+    cout<<"ini ada baris baru\n";
+    return 0;
+}

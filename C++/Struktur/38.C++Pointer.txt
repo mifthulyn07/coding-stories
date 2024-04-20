@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //pointer: selalu bertipe data int
+    //pointer: menunjuk suatu variabel, maka pointer wajib memiliki alamat dari variabel yang ditunjuknya
+    //memori atau alamatnya selalu begerak atau berubah ketika di eksekusi
+    int a = 5, b = 4, c = 2;
+    cout << "ini adalah nilai dari a: " << a << endl;
+    cout << "ini adalah alamat dari a: " << &a << endl <<endl;//melihat alamat
+
+    int *bPtr = &b;//cara menaruk pointer  ke alamat
+    cout << "ini adalah nilai dari b: " << b << endl;
+    cout << "ini adalah alamat dari b: " << bPtr << endl << endl;//alamat sudah dimasuki pointer
+
+    int *cPtr = nullptr;//ini cara agar memori yang berisi pointer kosong(engga tahu kenapa error)
+    cPtr = &c;
+    cout << "ini adalah nilai dari c: " << c << endl;
+    cout << "ini adalah alamat dari c: " << cPtr << endl;
+    
+    //dereferencing: mengambil data dari sebuah pointer
+    b = 10;
+    cout << "mengambil data dari pointer: " << *bPtr <<endl;
+
+
+    cin.get();
+    return 0;
+}

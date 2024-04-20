@@ -1,0 +1,66 @@
+package Mifthulyn07;
+
+class data{
+    public int intPublic;
+    private int intPrivate;
+    private double doubleprivate;
+    public data(){
+        this.intPublic = 5;
+        this.intPrivate = 10;
+    }
+    //getter
+    public int getIntPrivate(){
+        return this.intPrivate;
+    }
+    //setter
+    public void setdoubleprivate(double value){
+        this.doubleprivate = value;
+    }
+    void display(){
+        System.out.println("Setter: " + this.doubleprivate);
+    }
+}
+
+class Lingkaran{
+    private double diameter;
+    
+    Lingkaran(double diameter){
+        this.diameter = diameter;
+    }
+    //setter
+    public void setjari2(double jari2){
+        this.diameter = jari2*2;
+    }
+    //getter
+    public double getjari2(){
+        return this.diameter/2;
+    }
+    //getter
+    public double getluas(){
+        return 3.14*diameter*diameter/4;
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+       data object = new data();
+       
+       //membaca dan menulis menggunakan public
+       object.intPublic = 10;
+       System.out.println("public: " + object.intPublic);
+       
+       //hanya membaca(getter)
+       int angka = object.getIntPrivate();
+        System.out.println("getter : " + angka);
+       
+       //hanya menulis (setter)
+       object.setdoubleprivate(0.05);
+       object.display();
+       
+       //gabungkan setter & getter
+       Lingkaran object2 = new Lingkaran(5);
+       System.out.println("jari-jari: " + object2.getjari2());
+       object2.setjari2(14);//setting jari2
+       System.out.println("jari-jari: " + object2.getjari2());
+       System.out.println("luas: " + object2.getluas());
+    }
+}

@@ -1,0 +1,126 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f2f2f2;
+	font-family: arial;
+}
+.container{
+	width: 1000px;
+	margin: 70px auto;
+	box-shadow: 1px 1px 40px lightgrey;
+	border-radius: 15px;
+	display: flex;
+	height: 500px;
+	overflow: hidden;
+}
+.left{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	font-size: 8px;
+	padding: 5px;
+}
+.logo h1{
+	color: #333333;
+}
+.logo .circle{
+	width: 12px;
+	height: 12px;
+	background-color: #333333;
+	border-radius: 50%;
+	margin: 5px;
+}
+.word{
+	padding: 15px 15px 200px;
+}
+.word h3{
+	font-size: 18px;
+	font-weight: normal;
+	color: #404040;
+	padding: 8px 0px;
+}
+.word p{
+	color: #a6a6a6;
+	font-size: 15px;
+}
+.owner{
+	display: flex;
+	align-items: center;
+	padding: 10px ;
+}
+.owner .user{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 5px;
+}
+.owner .user img{
+	width: 100%;
+}
+.owner .name{
+	color: #404040;
+	font-weight: 500;
+	font-size: 15px;
+}
+.right{
+	width: 70%;
+	line-height: 0px;/*menghilangkan space di bawah gambar*/
+}
+.view img{
+	width: 100%;
+}
+.slider{
+	overflow-x: scroll;
+	max-width: 100%;/*penting agar lebarnya tidak kurang dari 100%*/
+	height: 105px;
+	display: flex;
+	align-items: center;
+	scrollbar-color: #404040 #f2f2f2;
+	scrollbar-width: thin;
+}
+/*webkit hanya bisa di google chrome dan safari, di firefox tidak bisa*/
+::-webkit-scrollbar{height: 5px;}
+::-webkit-scrollbar-track{ box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  border-radius: 10px;}
+::-webkit-scrollbar-thumb{ background-color: #404040; border-radius: 10px;}
+.slider .slide{
+	height: 60px;
+	min-width: 60px;/*penting agar lebarnya tidak lebih kecil 70px*/
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin: 5px;
+}
+.slider .slide:hover{
+	opacity: 0.8;
+} 
+.slider .slide img{
+	height: 70px;
+} 
+ @keyframes fade{
+ 	0%{
+ 		opacity: 0;
+ 	}
+ 	50%{
+ 		opacity: 0.5;
+ 	}
+ 	100%{
+ 		opacity: 1;
+ 	}
+ }
+ .fade{
+ 	animation: fade 1s;
+ }
+ .active{
+ 	opacity: 0.5;
+ }

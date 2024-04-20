@@ -1,0 +1,42 @@
+package javaapplication12;
+import java.util.*;
+public class JavaApplication12 {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        int inputpanjang, inputlebar;
+        /*while(true){//agar terjadi berulang ulang
+            System.out.print("masukan panjang: ");
+            int inputpanjang = userInput.nextInt();
+            System.out.print("masukan lebar: ");
+            int inputlebar = userInput.nextInt();
+            gambar(inputpanjang, inputlebar);
+        }*/
+        System.out.print("masukan panjang: ");
+        inputpanjang = userInput.nextInt();
+        System.out.print("masukan lebar: ");
+        inputlebar = userInput.nextInt();
+        gambar(inputpanjang, inputlebar);
+        
+        System.out.println("luasnya adalah: " + luas(inputpanjang, inputlebar));
+        System.out.println("kelilingnya adalah: " + keliling(inputpanjang, inputlebar));
+    }
+    
+    public static void gambar(int panjang, int lebar){
+        for(int i=0; i<panjang; i++){
+            for(int j=0; j<lebar; j++){
+                System.out.printf("* ");
+            }
+            System.out.printf("\n");
+        }
+    }
+    
+    private static int luas(int panjang,int lebar){
+        int hasil=panjang*lebar;
+        return hasil;
+    }
+    
+    private static int keliling(int panjang,int lebar){
+        int hasil=2*(panjang+lebar);
+        return hasil;
+    }
+}

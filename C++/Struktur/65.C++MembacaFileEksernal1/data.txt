@@ -1,0 +1,8 @@
+ini adalah file eksternal.
+dan ini adalah baris ke-2.
+
+----data----
+no	Nama
+1.	Miftahul
+2.	Ulyana
+3.	Hutabarat

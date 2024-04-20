@@ -1,0 +1,32 @@
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.exe
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.pdb
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.xml
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\Interop.WMPLib.dll
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\AxInterop.WMPLib.dll
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\Interop.WMPLib.dll
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.vbproj.ResolveComReference.cache
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form2.resources
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form1.resources
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Resources.resources
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.vbproj.GenerateResource.Cache
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.exe
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.xml
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.pdb
+D:\Program\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form3.resources
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\Interop.WMPLib.dll
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.vbproj.ResolveComReference.cache
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.exe
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.xml
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.pdb
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.exe
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.pdb
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\7.MDI Form.xml
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\Interop.WMPLib.dll
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\bin\Debug\AxInterop.WMPLib.dll
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form2.resources
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form3.resources
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Form1.resources
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\_7.MDI_Form.Resources.resources
+D:\Programming\percobaan\CobaVisualStudio\7.MDI Form\7.MDI Form\obj\x86\Debug\7.MDI Form.vbproj.GenerateResource.Cache

@@ -1,0 +1,26 @@
+package mifthulyn07;//selalu huruf kecil
+import java.util.Scanner;//tahap awal untuk mengimput
+public class Mifthulyn07 {//nama yang asli
+    public static void main(String[] args) {
+        Scanner UserInput = new Scanner(System.in);
+        int hari;
+        System.out.println("masukkan hari dalam bentuk angka 1-7: ");
+        hari = UserInput.nextInt();
+        if(hari == 1){
+            System.out.println("ini adalah hari senin");
+        }else if(hari == 2){
+            System.out.println("ini adalah hari selasa");
+        }else if(hari == 3){
+            System.out.println("ini adalah hari rabu");
+        }else if(hari == 4){
+            System.out.println("ini adalah hari kamis");
+        }else if(hari == 5){
+            System.out.println("ini adalah hari jum'at");
+        }else if(hari == 6){
+            System.out.println("ini adalah hari sabtu");
+        }else if(hari == 7){
+            System.out.println("ini adalah hari minggu");
+        }
+        
+    }
+}

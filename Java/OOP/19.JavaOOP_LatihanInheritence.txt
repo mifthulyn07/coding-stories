@@ -1,0 +1,23 @@
+package miftah;
+class MatematikaCanggih{
+    void pertambahan(int a, int b){
+        System.out.println("Pertambahan: " + (a + b));
+    }
+    void perkalian(int a, int b){
+        System.out.println("Perkalian: " + (a * b));
+    }
+    void modulus(int a, int b){
+        System.out.println("modulus: " + (a % b));
+}}
+class MatematikaCanggihBanget extends MatematikaCanggih{
+    void pertambahanTiga(int a, int b, int c){
+        System.out.println("Pertambahan Tiga: " + (a+b+c));
+}}
+public class MatematikaCanggihBangetBeraksi {
+    public static void main(String[] args) {
+        MatematikaCanggihBanget mtk = new MatematikaCanggihBanget();
+        mtk.pertambahan(3, 2);
+        mtk.perkalian(3, 2);
+        mtk.modulus(3, 2);
+        mtk.pertambahanTiga(3, 2, 2);
+}}

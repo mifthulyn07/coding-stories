@@ -1,0 +1,62 @@
+package javaapplication12;
+import java.util.Arrays;//bisa Arrays/* 
+public class JavaApplication12 {
+    public static void main(String[] args) {
+        int[] Array1 = {5,4,6,2,8};
+        int[] Array2 = {2,3,2,1,9};
+        
+        System.out.println("=====PENJUMLAHAN ARRAY");
+        PrintArray(JumlahArray(Array1, Array2), "hasil Penjumlahan");
+        
+        System.out.println("\n=====GABUNG ARRAY");
+        PrintArray(GabungArray(Array1, Array2), "Hasil Gabungan");
+        
+        System.out.println("\n=====SORT ARRAY DARI YANG TERBESAR(SORTING REVERSE)");
+        ReverseSort1(Array1);
+        PrintArray(Array1, "Hasil Reverse Sort");
+       
+        ReverseSort2(Array1);
+        PrintArray(Array1, "Hasil Reverse Sort");
+        
+    }
+    
+    private static void ReverseSort2(int[] DataArray){
+        Arrays.sort(DataArray);
+        for(int i=0; i<DataArray.length/2; i++){
+            int buffer = DataArray[i];
+            DataArray[i]=DataArray[(DataArray.length-1)-i];
+            DataArray[(DataArray.length-1)-i]=buffer;
+        }
+    }
+    
+    private static void ReverseSort1(int[] DataArray){
+        Arrays.sort(DataArray);
+        int[] ArrayBuffer = Arrays.copyOf(DataArray, DataArray.length);
+        for(int i=0; i<DataArray.length; i++){
+            DataArray[i] = ArrayBuffer[(ArrayBuffer.length-1)-i];
+        }
+    }
+    
+    private static int[] GabungArray(int[] DataArray1, int[] DataArray2){
+        int[] ArrayHasil = new int[DataArray1.length + DataArray2.length];
+        for(int i=0; i<DataArray1.length; i++){
+            ArrayHasil[i]=DataArray1[i];
+        }
+        for(int i=0; i<DataArray2.length; i++){
+            ArrayHasil[i+DataArray1.length]=DataArray2[i];
+        }
+        return ArrayHasil;
+    }
+    
+    private static int[] JumlahArray(int[] DataArray1, int[] DataArray2){
+        int[] ArrayHasil = new int[DataArray1.length];
+        for(int i=0; i<DataArray1.length; i++){
+            ArrayHasil[i] = DataArray1[i] + DataArray2[i]; 
+        }
+        return ArrayHasil;
+    }
+    
+    private static void PrintArray(int[] DataArray, String message){
+        System.out.println(message + " = " + Arrays.toString(DataArray));
+    }
+}

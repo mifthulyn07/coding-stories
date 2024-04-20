@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		html, body{
+		/*ini agar koordinat di document full*/
+			height: 100%;
+		}
+		body{
+			text-align: center;
+			background-color: white;
+			color: black;
+		}
+		.darkmode{
+			background-color: black;
+			color: white;
+		}
+		.randomColorBox{
+			width: 200px;
+			height: 200px;
+			margin: 10px auto;
+			border: 1px solid gray;
+		}
+		.sliderBox{
+			width: 200px;
+			height: 200px;
+			margin: 10px auto;
+			border: 1px solid gray;
+		}
+		.colorBox{
+			width: 200px;
+			height: 200px;
+			margin: 10px auto;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body>
+	<!-- kasus 1 -->
+	<h1 class="gameWarna">Let's Play With Color!!!</h1>
+	<button type="button" id="tblLightOrDark">Click for change light/dark mode</button>
+	<br><br><hr>
+
+	<!-- kasus 2 -->
+	<div class="randomColorBox"></div>
+	<br><br><hr>
+	
+	<!-- kasus 3 -->
+	<div class="sliderBox"></div>
+	<input type="range" id="sMerah" min="0" max="255" value="255">
+	<input type="range" id="sHijau" min="0" max="255" value="255">
+	<input type="range" id="sBiru" min="0" max="255" value="255">
+	<br><br><hr>
+
+	<!-- kasus 4 -->
+	<div class="colorBox"></div>
+
+</body>
+<script type="text/javascript" src="4.LatihanBermainDenganWarna.js"></script>
+</html>

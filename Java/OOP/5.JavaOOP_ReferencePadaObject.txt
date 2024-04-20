@@ -1,0 +1,46 @@
+package Mifthulyn07;
+class buku{
+    String judul;
+    String penulis;
+            
+    buku(String judul, String penulis){
+        this.judul = judul;
+        this.penulis = penulis;
+    }
+    void display(){
+        System.out.println("\nJudul\t: " + this.judul);
+        System.out.println("Penulis\t: " + this.penulis);
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        buku buku1 = new buku("senja", "miftah");
+        buku1.display();
+        
+        //menampilkan adress
+        String adressbuku1 = Integer.toHexString(System.identityHashCode(buku1));
+        System.out.println(adressbuku1);
+        
+        //assignment object
+        buku buku2 = buku1;
+        buku2.display();
+        String adressbuku2 = Integer.toHexString(System.identityHashCode(buku1));
+        System.out.println(adressbuku2);
+        
+        //karna adress buku 1dan 2 berada pada adress yang sama
+        buku1.judul = "terbit";
+        buku1.display();
+        buku2.display();
+        
+        //masukkan objek kedalam methods
+        fungsi(buku2);
+        buku1.display();
+        buku2.display();
+    }
+    
+    public static void fungsi(buku databuku){
+        String adressdatabuku = Integer.toHexString(System.identityHashCode(databuku));
+        System.out.println("\nadress dalam fungsi " + adressdatabuku);
+        databuku.penulis = "Miftahul";
+    }
+}

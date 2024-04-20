@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int m, n, r;
+		cout<<"Masukkan m: ";cin>>m;
+		cout<<"masukkan n: ";cin>>n;
+		r = m % n;
+		while (r != 0)
+{
+			m = n;
+			n = r;
+			r = m % n;
+		}
+		cout<<"FPB: "<<n;
+	return 0;
+}
+

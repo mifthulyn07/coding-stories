@@ -1,0 +1,53 @@
+package Mifthulyn07;
+
+class Player{
+    private String name;
+    private static int jumlahPlayer;
+    
+    //overloading constructor
+    //opsi 1
+    Player(String name){
+        Player.jumlahPlayer++;
+        this.name = name;
+    }
+    //opsi 2
+    Player(){
+        Player.jumlahPlayer++;
+        this.name = "player" + Player.jumlahPlayer;
+    }
+    //method
+    void show(){
+        System.out.println("name: " + this.name);
+    }
+}
+
+class matematika{
+    
+    static int tambah(int x, int y){
+        return x+y;
+    }
+    static double tambah(int x, double y){
+        return (double)x+y;
+    }
+}
+
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+       //overloading pada konstruktor 
+       Player player1 = new Player("miftah");
+       Player player2 = new Player();
+       Player player3 = new Player("nurli");
+       Player player4 = new Player();
+       
+       player1.show();
+       player2.show();
+       player3.show();
+       player4.show();
+       
+       //overloading method
+       int a = matematika.tambah(1,19);
+       System.out.println("\npertambahan: " + a);
+       double b = matematika.tambah(1, 2.5);
+       System.out.println("pertambahan: " + b);
+    }
+}

@@ -1,0 +1,31 @@
+package miftahul_ulyana_hutabarat;
+public class Miftahul_Ulyana_Hutabarat {
+    public static void main(String[] args) {
+       //unary = operasi yang dilakukan pada satu variabel
+       
+       //unary + dan -
+       int angka = 1;
+       System.out.printf("unary '+' %d menjadi %d \n", angka, +angka);
+       System.out.printf("unary '-' %d menjadi %d \n", angka ,+angka);
+       
+       //unary decrement dan increment
+       int a = 10;
+       a++;
+       System.out.printf("nilai dengan '++' akan menjadi %d\n", a);
+       int b = 10;
+       b--;
+       System.out.printf("nilai dengan '--' akan menjadi %d\n", b);
+       
+       //catatan perbedaan ++c dengan c++
+       int c = 10;
+       System.out.printf("nilai dengan '++' menjadi %d \n", c++);//diprint dahulu baru di tambahin
+       int d = 4;
+       System.out.printf("nilai dengan '++' menjadi %d \n", ++d);//ditambah dahulu baru di print
+       
+       //unary boolean dengan !(bang) untuk negasi
+       boolean ucup = true;
+       System.out.println("nilai boolean = " + ucup);
+       System.out.println("nilai boolean = " + !ucup);
+    }
+    
+}

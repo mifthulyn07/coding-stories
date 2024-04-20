@@ -1,0 +1,12 @@
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\bin\Debug\8.Database_Part2.exe
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\bin\Debug\8.Database_Part2.pdb
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\bin\Debug\8.Database_Part2.xml
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\_8.Database_Part2.Form1.resources
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\_8.Database_Part2.Resources.resources
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.vbproj.GenerateResource.Cache
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.exe
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.xml
+D:\Program\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.pdb
+D:\Programming\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.exe
+D:\Programming\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.xml
+D:\Programming\percobaan\CobaVisualStudio\8.Database_Part2\8.Database_Part2\obj\x86\Debug\8.Database_Part2.pdb

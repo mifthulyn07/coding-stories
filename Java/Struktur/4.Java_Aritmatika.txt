@@ -1,0 +1,25 @@
+package miftahul_ulyana_hutabarat;
+public class Miftahul_Ulyana_Hutabarat {
+    public static void main(String[] args) {
+       //operasi aritmatika
+       int variabel1 = 5;
+       int variabel2 = 2;
+       float hasil;
+        //1.penjumlahan
+       hasil = variabel1 + variabel2;
+       System.out.println(variabel1 + "+" + variabel2 + "=" + hasil);
+       //2.pengurangan
+       hasil = variabel1 - variabel2;
+       System.out.printf("%d + %d = %f \n", variabel1, variabel2, hasil);
+       //3.perkalia
+       hasil = variabel1 * variabel2;
+       System.out.printf("%d x %d = %f \n", variabel1, variabel2, hasil);
+       //4.pembagian
+       hasil = (float) variabel1 / variabel2;
+       System.out.printf("%d / %d = %f \n", variabel1, variabel2, hasil);
+       //5.modulus: hasil sisa pembagian
+       hasil = variabel1 % variabel2;
+       System.out.printf("%d %% %d = %f \n", variabel1, variabel2, hasil);
+    }
+    
+}

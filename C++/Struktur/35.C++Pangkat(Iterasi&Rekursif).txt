@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int pangkat_iterasi(int a, int b){//iterasi = loop program
+    int hasil = a;
+    for(int i = 1; i<b; i++){
+        hasil = hasil * a;
+    }
+    return hasil;
+}
+int pangkat_rekursif(int a, int b){
+    if(b <= 1){
+        return a;
+    }else{
+        return a * pangkat_rekursif(a, (b-1));
+    }}
+int main()
+{
+    int a, b;
+    cout<<"masukkan nilai: ";cin>>a;
+    cout<<"masukkan pangkat: ";cin>>b;
+    cout<<"hasil iterasi: "<<pangkat_iterasi(a,b)<<endl;
+    cout<<"hasil rekursif: "<<pangkat_rekursif(a,b)<<endl;
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <array>
+using namespace std;
+
+const int baris = 2;//agar int baris & kolom berlaku di void dan int main
+const int kolom = 3;
+
+void printArray(array <array <int, baris>, kolom> nilaiArray){//agar bisa mengambil nilai array milik int main
+    for(i_kolom : nilaiArray){//looping khusus array(dimana dia terus mengeluarkan nilaiArray secara looping)
+        cout<<"[ ";
+        for(int j_baris: i_kolom){
+            cout<<j_baris<<" ";
+        }
+        cout<<"]"<<endl;
+    }
+
+}
+int main()
+{
+    array <array <int, baris>, kolom> nilai = {1,2,3,4,5,6};//int nilai[2][3];
+    cout<<nilai[0][0]<<" "<<nilai[0][1]<<" ";//menampilkan nilai array dengan cara manual baris 2 kolom 3
+    cout<<nilai[1][0]<<" "<<nilai[1][1]<<" ";
+    cout<<nilai[2][0]<<" "<<nilai[2][1]<<" ";
+    cout<<endl<<endl;
+    printArray(nilai);
+    return 0;
+
+}

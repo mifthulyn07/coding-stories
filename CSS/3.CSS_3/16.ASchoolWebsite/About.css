@@ -1,0 +1,294 @@
+/*===Reset====================================================================================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*===Font====================================================================================================*/
+@font-face {
+    font-family: 'acmeregular';
+    src: url('font/Acme-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*===Style==================================================================================================*/
+body{
+	background-color:#f2f2f2;
+	font-family: 'acmeregular';
+}
+.clear{
+	clear: both;
+}
+.container{
+	width: 100%;
+	position: relative;
+}
+.sidebar{
+	box-sizing: border-box;
+	width: 20%;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+}
+.sidebar a{
+	width: 100%;
+	display: block;
+	text-decoration: none;
+}
+.sidebar a span{
+	position: absolute;
+	line-height: 100px;
+	color: black;
+	font-size: 20px;
+}
+.sidebar a img{
+	width: 70px;
+	margin: 10px ;
+}
+.sidebar ul{
+	width: 100%;
+}
+.sidebar ul li{
+	margin: 15px 15px 15px 0px;
+	padding: 15px 20px;
+	background-color: #006644;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 0px 1px 1px black;
+	transition: 0.3s;
+}
+.sidebar ul li:hover{
+	margin: 15px 0px 15px 0px;
+	background-color: #00573a;
+}
+.sidebar ul li.active{
+	margin: 15px 0px 15px 0px;
+	background-color: #00573a;
+}
+.sidebar ul li a{
+	text-decoration: none;
+	color:  #f2f2f2;
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+.main{
+	box-sizing: border-box;
+	width: 80%;
+	padding: 0px 30px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.main .header{
+	background: #d9e8d9;
+	height: 200px;
+	padding: 25px;
+	box-sizing: border-box;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 0px 1px 1px black;
+}
+.main .header img{
+	width: 150px;
+	height: 150px;
+	margin-right: 25px;
+	float: left;
+}
+.main .header h1{
+	color: #006644;
+	font-weight: bold;
+	font-size: 60px;
+	margin: 20px 0px 0px 30px;
+	line-height: 125px;
+	text-shadow: 0px 1px 1px white;
+}
+.main .content{
+	margin: 20px 0px 100px;
+	padding: 20px;
+}
+.main .content img{
+	width: 200px;
+	float: right;
+	border-radius: 50%;
+	margin: 0px 25px;
+	box-shadow: 0px 1px 1px black
+}
+.main .content h2{
+	font-size: 24px;
+	margin: 0px 0px 0px 30px;
+}
+.main .content h3{
+	font-size: 24px;
+	margin: 30px 0px 0px 30px;
+}
+.main .content p{
+	margin-left: 30px;
+}
+.main .content ol{
+	margin: 10px 0px 10px 50px;
+}
+.main .content ol li{
+	margin: 3px 0px;
+}
+.main .footer{
+	background-color: #333333;
+	box-shadow: 0px 1px 1px black;
+	padding: 15px;
+	color: white;
+	font-size: 13px;
+	border-radius: 10px 10px 0px 0px;
+}
+.main .footer p{
+	font-family: arial;
+	display: inline-block;
+	line-height: 30px;
+}
+.main .footer ul{
+	float: right;
+}
+.main .footer ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+.main .footer ul li a img{
+	width: 30px;
+}
+
+@media (max-width: 810px){
+.sidebar a span{
+	line-height: 70px;
+	font-size: 15px;
+}
+.sidebar a img{
+	width: 45px;
+	margin: 8px ;
+}
+}
+
+@media (max-width: 428px){
+.sidebar a span{
+	line-height: 40px;
+	font-size: 8px;
+}
+.sidebar a img{
+	width: 30px;
+	margin: 5px ;
+}
+.main .content{
+	margin: 25px 0px 500px;
+}
+.main .header{
+	height: 110px;
+	padding: 10px;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 0px 1px 1px black;
+}
+.main .header img{
+	width: 80px;
+	height: 80px;
+	margin-right: 5px;
+	float: left;
+}
+.main .header h1{
+	color: #006644;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 5px 0px 0px 0px;
+	text-shadow: 0px 1px 1px white;
+	line-height: 80px;
+}
+.sidebar ul li{
+	margin: 15px 15px 15px 0px;
+	padding: 10px 10px;
+	background-color: #006644;
+	border-radius: 0px 7px 7px 0px;
+	box-shadow: 0px 1px 1px black;
+	transition: 0.3s;
+}
+.sidebar ul li a{
+	text-decoration: none;
+	color:  #f2f2f2;
+	text-align: right;
+	font-weight: bold;
+	font-size: 12px;
+}
+.main .footer{
+	background-color: #333333;
+	box-shadow: 0px 1px 1px black;
+	padding: 15px;
+	color: white;
+	font-size: 10px;
+	border-radius: 10px 10px 0px 0px;
+}
+.main .footer p{
+	font-family: arial;
+	line-height: 20px;
+}
+.main .footer ul li a img{
+	width: 20px;
+}
+.main .content{
+	margin: 25px 0px 0px;
+}
+.main .content img{
+	margin: 0px 25px 20px;
+}
+.main .content h2{
+	margin: 0px;
+}
+.main .content h3{
+	font-size: 24px;
+	margin: 30px 0px 0px 0px;
+}
+.main .content p{
+	margin-left: 0px;
+}
+.main .content ol{
+	margin: 10px 0px 10px 20px;
+}
+.main .content ol li{
+	margin: 3px 0px;
+}
+}

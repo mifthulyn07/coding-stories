@@ -1,0 +1,112 @@
+package Mifthulyn07;
+//player
+class Player{
+    //data member
+    String name;
+    double health;
+    int level;
+    //object member
+    Weapon weapon;
+    Armor armor;
+    //Constructor
+    Player(String name, double health){
+        this.name = name;
+        this.health = health;
+    }
+    //method punya parameter tanpa return
+    void attack(Player opponent){//serang musuh
+        double attackPower = this.weapon.attackPower;
+        System.out.println(this.name + " attacking " + opponent.name + " with power " + attackPower);
+        opponent.defence(attackPower);
+    }
+    //method punya parameter tanpa return
+    void defence(double attackPower){
+        //akan mengambil demage
+        double damage;
+        if (this.armor.defencePower < attackPower){
+            damage = attackPower - this.armor.defencePower;
+        }  else{
+            damage = 0;
+        }
+        this.health -= damage;
+        System.out.println(this.name + " gets damage " + damage);
+    }
+    //method punya parameter tanpa return
+    void equipWeapon(Weapon weapon){
+        this.weapon = weapon;//bekerja sama dengan class weapon
+    }
+    //method punya parameter tanpa return
+    void equipArmor(Armor armor){
+        this.armor = armor;//bekerja sama dengan class armor 
+    }
+    //method tidak punya parameter dan return
+    void display(){
+        System.out.println("\nName: " + this.name);
+        System.out.println("Health: " + this.health + "hp");
+        this.weapon.display();//menampilkan weapon yang dipilih
+        this.armor.display();//menampilkan armor yang dipilih
+    }
+}
+//senjata
+class Weapon{
+    //data member
+    double attackPower;
+    String name;
+    //constructor 
+    Weapon(String name, double attackPower){
+        this.name = name;
+        this.attackPower = attackPower;
+    }
+    //method tidak punya parameter dan return
+    void display(){
+        System.out.println("Weapon: " + this.name + "\t\t Attack: " + this.attackPower);
+    }
+}
+//armor
+class Armor{
+    //data member
+    double defencePower;
+    String name;
+    //constructor
+    Armor(String name, double defencePower){
+        this.name = name;
+        this.defencePower = defencePower;
+    }
+    //method tidak punya parameter dan return
+    void display(){
+        System.out.println("Armor: " + this.name + "\t\t Defence: " + this.defencePower);
+    }
+}
+    
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        //membuat Object Player
+        Player player1 = new Player("Miftah", 100);
+        Player player2 = new Player("Putri", 50);
+        //membuat object weapon
+        Weapon sword= new Weapon("Sword", 15);
+        Weapon gun = new Weapon ("gun", 20);
+        //membuat object armor
+        Armor harnes = new Armor("Harnes", 10);
+        Armor dress = new Armor ("Dress", 0);
+        //Player1
+        player1.equipWeapon(gun);
+        player1.equipArmor(harnes);
+        player1.display();
+        //Player2
+        player2.equipWeapon(sword);
+        player2.equipArmor(dress);
+        player2.display();
+        System.out.println("\n===========");
+        System.out.println("PERTEMPURAN");
+        System.out.println("===========\n");
+        System.out.println("Episode 1");
+        player1.attack(player2);
+        player1.display();
+        player2.display();
+        System.out.println("\nEpisode 2");
+        player2.attack(player1);
+        player1.display();
+        player2.display();
+    }
+}

@@ -1,0 +1,12 @@
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\_4.Percabangan_part2.Form1.resources
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\_4.Percabangan_part2.Resources.resources
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.vbproj.GenerateResource.Cache
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\bin\Debug\4.Percabangan_part2.exe
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\bin\Debug\4.Percabangan_part2.pdb
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\bin\Debug\4.Percabangan_part2.xml
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.exe
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.xml
+D:\Program\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.pdb
+D:\Programming\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.exe
+D:\Programming\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.xml
+D:\Programming\percobaan\CobaVisualStudio\4.Percabangan_part2\4.Percabangan_part2\obj\x86\Debug\4.Percabangan_part2.pdb

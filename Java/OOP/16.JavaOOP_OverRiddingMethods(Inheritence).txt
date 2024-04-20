@@ -1,0 +1,28 @@
+package Mifthulyn07;
+class Hero{
+    String name;
+    
+    void display(){
+        System.out.println("hero: " +this.name);
+    }
+}
+class HeroStrength extends Hero{
+    double defencePower;
+   
+    void display(){//overriding methods
+        System.out.println("\nHero Strength ");
+        System.out.println("Hero: " +this.name);
+        System.out.println("Defence Power: " +this.defencePower);
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        Hero hero1 = new Hero();
+        hero1.name = "saitama";
+        hero1.display();
+        
+        HeroStrength hero2 = new HeroStrength();
+        hero2.name = "saitama";
+        hero2.defencePower = 100;
+        hero2.display();
+    }}

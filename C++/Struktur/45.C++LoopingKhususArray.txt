@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int nilai[10]={10,20,30,40,50,60,70,80,90,100};//array
+    for(int i : nilai){//looping hanya untuk array agar lebi fleksibel(berlauku c++11 keatas)&(array bisa dilakukan tanpa standard library ataupun tidak) 
+        cout<<i<<" dengan adress: "<<&i<<endl;//(looping ini dia terus mengeluarkan nilaiArray secara looping)
+        i *= 2;//percobaaan tidak berpengaruh
+    }
+    cout<<endl;
+    for(int &i : nilai){//memanipulasi dengan menggunakan referensi
+        i *= 2;//percobaaan berpengaruh
+        cout<<i<<" dengan adress yang sebenarnya: "<<&i<<endl;
+    }
+    return 0;
+}

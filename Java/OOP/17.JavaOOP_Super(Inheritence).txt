@@ -1,0 +1,35 @@
+package Mifthulyn07;
+class Hero{
+    String name = "Class Hero";
+    
+    void display(){
+        System.out.println("ini adalah " +this.name);
+    }
+    void dummyMethod(){
+        System.out.println("Method ini ada di super class");
+    }
+}
+class HeroStrength extends Hero{
+    String name = "Class Strength";
+   
+    void display(){//overriding methods
+        System.out.println("\nini adalah " + super.name);
+        this.dummyMethod();
+    }//super.name akan selalu mengakses atribut super class(parents)
+    //this.name akan mengakses variable dari kelasnya sendiri, jika dikelasnya tidak terdapat variable, maka akan mengakses variabel di parents nya 
+    void displaySuper(){//overriding methods
+        System.out.println("\nini adalah " + this.name);
+        super.dummyMethod();
+    }
+    void dummyMethod(){
+        System.out.println("Method ini ada di subclass");
+    }
+}
+public class MiftahulUlyanaHutabarat {
+    public static void main(String[] args) {
+        Hero hero1 = new Hero();
+        HeroStrength hero2 = new HeroStrength();
+        hero1.display();
+        hero2.display();
+        hero2.displaySuper();
+    }}

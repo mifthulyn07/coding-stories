@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #FAEEE7;
+}
+
+/**/
+
+.wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1{
+	margin: 30px 0px;
+	font-size: 45px;
+}
+main{
+	width: 400px;
+	padding: 5px;
+	background-color: #21325E;
+	box-shadow: inset 5px 5px 12px #355197, 5px 5px 12px rgb(0,0,0,0.16); 
+	border-radius: 20px;
+}
+
+/**/
+
+.topbar{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+.control{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.control div{
+	margin: 0px 5px;
+}
+.control .reset img{
+	width: 30px;
+}
+.control .reset button{
+	background: transparent;
+	border: none;
+	color: white;
+}
+.score{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EFEFEF;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #355197; 
+	border-radius: 10px;
+	padding: 0px 5px;
+}
+.score .scorecomputer,
+.score .scoreuser{
+	display: flex;
+}
+.score p{
+	margin: 0px 5px;
+}
+
+/**/
+
+.userChoice{
+	display: flex;
+	justify-content: space-around;
+	box-shadow: inset 5px 5px 12px #f38458, 5px 5px 12px rgb(0,0,0,0.16); 
+	background-color: #ee4f11;/*orange*/
+	border-radius: 20px;
+	padding: 10px;
+	margin: 30px 5px 5px;
+}
+.userChoice div{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EFEFEF;/*hijau*/
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #f38458; 
+	overflow: hidden;
+}
+.userChoice button{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+} 
+.userChoice div img{
+	width: 80px;
+	height: 80px;
+}
+.userChoice div img:hover{
+	transform: scale(0.98);
+	transition: 0.2s;
+}
+
+/**/
+.computerChoice{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.computer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	margin: 15px;
+	border-radius: 50%;
+	background-color: #EFEFEF;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #355197; 
+}
+.computer img{
+	width: 85px;
+	margin: 15px 0px;
+}
+
+/**/
+
+.info{
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info .desc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #EFEFEF;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #355197; 
+	font-size: 22px;
+	font-weight: bold;
+}

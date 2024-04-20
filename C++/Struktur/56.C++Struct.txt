@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct buah{
+    string warna;
+    float berat;
+    int harga;
+    string rasa;
+};
+
+int main()
+{
+    buah apel;
+    apel.warna = "merah";
+    apel.berat = 23.5;
+    apel.harga = 30000;
+    apel.rasa = "manis";
+
+    buah jeruk;
+    jeruk.warna = "orange";
+    jeruk.berat =50.5;
+    jeruk.harga = 55000;
+    jeruk.rasa = "asam";
+
+    cout<<"karakteristik buah apel"<<endl;
+    cout<<"warna: "<<apel.warna<<endl;
+    cout<<"berat: "<<apel.berat<<endl;
+    cout<<"harga: "<<apel.harga<<endl;
+    cout<<"rasa: "<<apel.rasa<<endl<<endl;
+
+    cout<<"karakteristik buah jeruk"<<endl;
+    cout<<"warna: "<<jeruk.warna<<endl;
+    cout<<"berat: "<<jeruk.berat<<endl;
+    cout<<"harga: "<<jeruk.harga<<endl;
+    cout<<"rasa: "<<jeruk.rasa<<endl;
+}

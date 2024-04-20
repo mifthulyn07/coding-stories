@@ -1,0 +1,278 @@
+*{
+	text-decoration: none;
+	color: white;
+}
+body{
+	background-color: #232931;
+}
+.clear{
+	clear: both;
+}
+header{
+	display: flex;
+	position: relative;
+}
+header .logo{
+	margin: 50px 15px 15px;
+}
+header .logo a{
+	display: block;
+}
+header .logo a img{
+	height: 120px;
+}
+header .judul{
+	display: flex;
+	align-items: center;
+}
+header .judul h1{
+	font-size: 20px;
+}
+header .firstnav{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+header .firstnav ul{
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+}
+header .firstnav ul li{
+	display: flex;
+	margin: 5px;
+}
+header .firstnav ul li a{
+	padding: 5px;
+}
+header .firstnav ul li a:hover{
+	background-color: rgba(225, 225, 225, 0.1);
+	border-radius: 10px;
+	padding: 5px;
+}
+header .firstnav ul li.active{
+	background-color: #FF4C29;
+	border-radius: 10px;
+	text-decoration: none;
+}
+header .firstnav ul li a{
+	font-size: 15px;
+	text-align: center;
+	margin: auto;
+}
+header .secondnav{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+header .secondnav ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #30475E;
+	padding: 10px;
+}
+header .secondnav ul li{
+	padding: 5px;
+	display: flex;
+}
+header .secondnav ul li a{
+	font-size: 15px;
+	text-align: center;
+	margin: auto;
+}
+main{
+	display: flex;
+	flex-direction: row;
+}
+main a:hover{
+	text-decoration: underline;
+}
+main content{
+	width: 80%;
+	margin: 20px;
+}
+main content .covid19{
+	display: flex;
+	align-items: center;
+}
+main content .covid19 img{
+	width: 200px;
+	margin: 0px 10px 20px 20px;
+}
+main content .covid19 div{
+	display: flex;
+	flex-direction: column;
+}
+main content .covid19 div b.bold{
+	font-size: 35px;
+	font-weight: bold;
+}
+main content h4{
+	font-weight: bold;
+	background-color: #00b386;
+	padding: 8px;
+	display: inline-block;
+}
+main content article{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+main content article .article{
+	width: 300px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px 20px 20px 0px;
+}
+main content article .article .gambar img{
+	width: 300px;
+}
+main content article .article a.judul{
+	font-weight: bold;
+	color: #EEEEEE;
+	margin-bottom: 8px;
+}
+main content article .article p{
+	font-size: 13px;
+}
+main aside{
+	width: 20%;
+	font-size: 13px;
+	margin: 20px;
+}
+main aside .gambar{
+	background-image: url("https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial/KEMERDEKAAN%20RI-20200817052958.jpg?tr=w-800");
+	width: 100%;
+	margin-bottom: 10px;
+}
+main aside .side{
+	background-color: rgba(225, 225, 225, 0.1);
+	padding: 10px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+main aside .side h3{
+	background-color: #3E7C17;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 15px;
+}
+main aside .side li{
+	margin: 10px;
+}
+footer{
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	height: 50px;
+	font-size: 12px;
+}
+footer p{
+	font-family: arial;
+	line-height: 20px;
+	text-align: center;
+}
+footer ul{
+	display: flex;
+}
+footer ul li{
+	margin: 8px;
+}
+footer ul li a img{
+	width: 25px;
+}
+
+@media (max-width: 665px){
+	header .logo img{
+		margin: 0px 5px 70px;
+	}
+	header .judul{
+		margin-top: -35px;
+	}
+	header .firstnav{
+		left: 0px;
+		right: 0px;
+		top: 0px;
+	}
+	header .secondnav{
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+	}
+	header .secondnav ul{
+		justify-content: center;
+	}
+	main{
+		flex-direction: column;
+	}
+	main content{
+		width: 100%;
+		margin: 5px;
+	}
+	main content .covid19{
+		justify-content: center;
+	}
+	main content .covid19 img{
+		margin: 0px;
+		padding: 0px;
+	}
+	main content .covid19 div{
+		margin-right: 5px;
+	}
+	main content .covid19 div b.bold{
+		font-size: 25px;
+	}
+	main content article{
+		flex-wrap: none;
+	}
+	main aside{
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	main aside .gambar{
+		 background-image: none;
+	}
+	footer{
+		padding: 5px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*image min(780*1080)*/

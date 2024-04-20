@@ -1,0 +1,96 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int k[1000], i, n, jlh=0;
+    cout<<"Banyaknya Jumlah Elemen Array= ";cin>>n;
+    for(i=1; i<=n; i++){
+        cout<<"Elemen Array ["<<i<<"] =";cin>>k[i];
+        jlh=jlh+k[i];
+    }
+    cout<<"jumlah dari elemen array"<<endl;
+    for(i=1; i<=n; i++){
+        cout<<k[i];
+        if(i<n){
+            cout<<"+";
+    }
+    }
+    cout<<endl;
+    cout<<"jumlah: "<<jlh;
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int nilai[100],bintang;
+    cout<<"program menampilkan grafik nilai"<<endl<<endl;
+    for(int i=0; i<=10; i++){
+        cout<<"jumlah mahasiswa dengan nilai: ";
+        if(i==0){
+            cout<<"0-9  : ";
+        }
+        else if(i==10){
+            cout<<"100  : ";
+        }
+        else {
+            cout<<i*10<<"-"<<i*10+9<<": ";
+        }
+        cin>>nilai[i];
+    }
+    cout<<endl;
+    cout<<"grafik nilai"<<endl<<endl;
+    for(int i=0; i<=10; i++){
+        if(i==0){
+            cout<<"0-9  : ";
+        }
+        else if(i==10){
+            cout<<"100  : ";
+        }
+        else {
+            cout<<i*10<<"-"<<i*10+9<<": ";
+        }
+        for(bintang=1; bintang<=nilai[i]; bintang++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+alamat array
+#include<iostream>
+using namespace std;
+int main()
+{
+    int nilai [5] ={4, 5, 3, 7, 4};
+
+    cout<<&nilai[0]<<" nilainya adalah: "<<nilai [0]<<endl;
+    cout<<&nilai[1]<<" nilainya adalah: "<<nilai [1]<<endl;
+    cout<<&nilai[2]<<" nilainya adalah: "<<nilai [2]<<endl;
+    cout<<&nilai[3]<<" nilainya adalah: "<<nilai [3]<<endl;
+    cout<<&nilai[4]<<" nilainya adalah: "<<nilai [4]<<endl;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int k[1000],i,n;
+
+cout<< "Banyaknya Jumlah Elemen Array = ";
+cin >>n;
+for(i=0;i<=n-1;i++){
+cout<<"Elemen Array ["<<i<<"] =";
+cin >>k[i];
+}
+cout <<"Isi Elemen array  adalah :" <<endl;
+for (i=0;i<=n-1;i++){
+cout <<"\t"<<k[i]<<endl;
+}
+return 0;
+}
+
+
