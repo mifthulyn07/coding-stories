@@ -25,6 +25,7 @@ console.log(values);
 
 // 2. DESTRUCTURING OBJECTS
 const mhs1 = {
+  name: "Miftahul Ulyana Hutabarat",
   rumah: "kebunlada",
   lahir: "medan",
 };
@@ -44,3 +45,32 @@ function getRumahMhs1(mhs) {
   return mhs.rumah;
 }
 console.log(getRumahMhs1(mhs1));
+
+// destructuring function
+function kalkulasiFunction(a, b) {
+  return [a + b, a - b, a * b, a / b];
+}
+console.log(kalkulasiFunction(2, 3)[0]);
+console.log(kalkulasiFunction(2, 3)[1]);
+
+const [jumlah, kurang, ...value] = kalkulasiFunction(2, 3);
+console.log(value);
+
+// desructuring object
+function kalkulasiObject(a, b) {
+  return {
+    tambah: a + b,
+    minus: a - b,
+    kali: a * b,
+    bagi: a / b,
+  };
+}
+
+const { minus, bagi, tambah, kali } = kalkulasiObject(2, 3);
+console.log(bagi);
+
+// lihat di mhs 1
+function cetakMhs({ name, rumah }) {
+  return `halo, nama saya ${name}, rumah saya ${rumah}  `;
+}
+console.log(cetakMhs(mhs1)); //property harus sesuai dengan isi object
