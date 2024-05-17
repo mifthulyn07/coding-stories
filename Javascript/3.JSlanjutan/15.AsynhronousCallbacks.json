@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Miftahul Ulyana Hutabarat",
+    "nim": "0702192031",
+    "email": "mifthulyn07@gmail.com",
+    "jurusan": "sistem informasi",
+    "idDosenWali": 1
+  },
+  {
+    "name": "Nurli Masito Lubis",
+    "nim": "0702192030",
+    "email": "nurli@gmail.com",
+    "jurusan": "Ilmu Komputer",
+    "idDosenWali": 2
+  },
+  {
+    "name": "Putriyana Hutabarat",
+    "nim": "0702192078",
+    "email": "putriyana@gmail.com",
+    "jurusan": "Kesehatan Masyarakat",
+    "idDosenWali": 3
+  }
+]
