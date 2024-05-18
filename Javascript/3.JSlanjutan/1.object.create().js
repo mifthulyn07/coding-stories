@@ -1,3 +1,4 @@
+// ini merupakan turunan dari object declaration tapi di better kan dengan object.create()
 const MethodMahasiswa = {
   //objek
   makan: function (porsi) {
@@ -19,6 +20,13 @@ const MethodMahasiswa = {
   },
 };
 function Mahasiswa(nama, energi) {
+  // === !!dari pada harus gini!!
+  // let mahasiswa = {};
+  // mahasiswa.makan = MethodMahasiswa.makan;
+  // mahasiswa.main = MethodMahasiswa.main;
+  // mahasiswa.tidur = MethodMahasiswa.tidur;
+
+  // === !!lebih baik daftarin saja di object.create()!!
   // jika di dalam OOP ini sama dengan inheritence(pewarisan)
   let mahasiswa = Object.create(MethodMahasiswa);
   mahasiswa.nama = nama; //property

@@ -1,5 +1,6 @@
+// PROTOTYPE == CONSTRUCTOR DI CLASS VERSI JS
 function Mahasiswa(nama, energi) {
-  //objek contructor yang dalam pemanggilannya di panggil new
+  // objek contructor yang dalam pemanggilannya di panggil new
   // let this = Object.create(Mahasiswa.prototype); <= kejadian di belakang layar dari constructor
   this.nama = nama; //property
   this.status = "Mahasiswa";
@@ -29,7 +30,7 @@ Mahasiswa.prototype.tidur = function (jam) {
 let sandhika = new Mahasiswa("Sandika", 10);
 let miftah = new Mahasiswa("Miftah", 20);
 
-// ==============================VERSI CLASS
+// ==============================VERSI CLASS CONSTRUCTOR
 class Murid {
   constructor(nama, energi) {
     this.nama = nama;

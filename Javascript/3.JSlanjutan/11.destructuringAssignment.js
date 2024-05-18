@@ -4,7 +4,7 @@
 const perkenalan = ["halo", "nama", "saya", "miftah"];
 // const [salam, satu, dua, nama] = perkenalan;
 const [salam, , , nama] = perkenalan; //skipping items
-console.log("salam");
+console.log(salam);
 
 // swap items = menukar isi dari variable
 let a = 1;

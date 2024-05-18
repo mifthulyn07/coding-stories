@@ -1,25 +1,33 @@
+// jika ingin tahu tahapan visualisasi js ada di link ini "https://pythontutor.com/render.html#mode=display"
+
+// window =  global object
+// this = window
 function satu() {
   var nama = "sandhika";
   console.log(nama);
 }
 
 function dua() {
-  console.log(nama);
+  console.log("terkena isi di global => " + nama);
   console.log(arguments);
 }
 
-console.log(nama);
+// nama var = undefined
+console.log("TIDAK ADA ISI => " + nama);
 var nama = "erik";
 satu();
 dua("doddy", "indira"); //disimpan di arguments
-console.log(nama);
+console.log("ini sudah jelas terisi global => " + nama);
+
+// closures merupakan kombinasi antara function dan lingkungan leksikal di dalam function tersebut
+// clusures adalah sebuah funcin ketika memiliki akses ke parent scopenya, meskipun parent scopeya sudah selesai dieksekusi
 
 // lexical scope
 function init() {
   let nama = "baby"; //local variable
   function tampilNama() {
     //inner function (closure*)
-    console.log(nama); //akses ke parent variable
+    return nama; //akses ke parent variable
   }
   console.dir(tampilNama); //menampilkan isi dari objek
   console.log(tampilNama());
@@ -35,11 +43,11 @@ function ucapkanSalam(waktu) {
 }
 
 let selamatPagi = ucapkanSalam("pagi");
-let selamatSiang = ucapkanSalam("siang");
+ucapkanSalam("siang")("miftah");
 let selamatMalam = ucapkanSalam("malam");
 
+// Bisa juga dipanggil langsung ucapkanSalam('Pagi')('Sandhika'); tanpa dimasukan ke variabel dulu
 selamatPagi("sandhika");
-selamatSiang("miftah");
 selamatMalam("erik");
 
 // contoh penggunaan
@@ -48,7 +56,7 @@ let add = (function () {
   return function () {
     return ++counter;
   };
-})(); //()() = function di dalam function
+})(); //()() = function di dalam function, kurung terakhir untuk menjalankan function
 
 console.log(add());
 console.log(add());
