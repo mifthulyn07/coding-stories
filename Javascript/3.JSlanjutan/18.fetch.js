@@ -6,17 +6,32 @@
 
 const searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", async function () {
-  //tuliskan async sebelim ketika ingin menjalankan asynconous menggunakan fetch, jika ingin menjalankan nya maka letak await
-  const inputKeyword = document.querySelector("#input-keyword");
-  const movies = await getMovies(inputKeyword.value);
-  updateMoviesContainer(movies);
+  try {
+    //tuliskan async sebelim ketika ingin menjalankan asynconous menggunakan fetch, jika ingin menjalankan nya maka letak await
+    const inputKeyword = document.querySelector("#input-keyword");
+    const movies = await getMovies(inputKeyword.value);
+    updateMoviesContainer(movies);
+  } catch (e) {
+    alert(e);
+  }
 });
 
 // mengambil data movies.json lewat fetch API
 function getMovies(keyword) {
   return fetch("http://www.omdbapi.com/?apikey=ea800c47&s=" + keyword)
-    .then((response) => response.json()) //menjalani promise
-    .then((response) => response.Search);
+    .then((response) => {
+      if (response.ok === "False") {
+        throw new Error(response.statusText);
+      }
+      return response.json();
+    }) //menjalani promise
+    .then((response) => {
+      console.log(response);
+      if (response.Response === "False") {
+        throw new Error(response.Error);
+      }
+      return response.Search;
+    });
 }
 
 function updateMoviesContainer(movies) {
