@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="nilai > 8">nilai di atas 8</div>
+      <div v-else-if="nilai < 8">nilai di bawah 8</div>
+      <div v-else>nilai nya 8</div>
+      <!-- v-show untuk hidden atau engga di css nya, sama seperti toggle -->
+      <div v-show="stateLampu">lampu hidup</div>
+      <button @click="toggleLampu">Klik saklar</button>
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            nilai: 8,
+            stateLampu: true,
+          };
+        },
+        methods: {
+          toggleLampu() {
+            this.stateLampu = !this.stateLampu;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

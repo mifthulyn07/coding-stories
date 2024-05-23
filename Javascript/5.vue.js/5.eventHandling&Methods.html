@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="count--">-</button>
+      <span>{{count}}</span>
+      <button v-on:click="count++">+</button>
+      <br />
+      <button @click="sayHello('miftah')">say hello</button>
+      <br />
+      <!-- ada banyak tipe keydown (mengandalkan keyboard) bisa di cari di vue nya sendiri -->
+      <input type="text" @keydown.enter="sayHello('yeyen')" />
+      <br />
+      <form method="post" action="ululu.html" @submit.prevent>
+        <input type="text" />
+        <input type="submit" value="send" />
+      </form>
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            count: 0,
+          };
+        },
+        methods: {
+          sayHello(nama) {
+            alert("hello " + nama);
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
