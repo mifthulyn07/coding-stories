@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <form action="">
+        <input type="text" placeholder="firstname" v-model="firstname" /><br />
+        <input type="text" placeholder="midname" v-model="midname" /><br />
+        <input type="text" placeholder="lastname" v-model="lastname" />
+      </form>
+      <div>Fullname: {{fullname}}</div>
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            firstname: "",
+            midname: "",
+            lastname: "",
+          };
+        },
+        computed: {
+          fullname() {
+            return this.firstname + " " + this.midname + " " + this.lastname;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

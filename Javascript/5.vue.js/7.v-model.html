@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #textkuning {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" v-model="username" />
+        <br />
+        <input type="checkbox" v-model="hobies" value="volly" />
+        <label for="volly">Volly</label>
+        <input type="checkbox" v-model="hobies" value="singing" />
+        <label for="singging">Singging</label>
+        <input type="checkbox" v-model="hobies" value="takraw" />
+        <label for="takraw">Takraw</label>
+        <input type="checkbox" v-model="hobies" value="cooking" />
+        <label for="cooking">Cooking</label>
+        <br />
+        <label for="role">Role</label>
+        <select name="role" v-model="role">
+          <option disabled value="">Pilih Satu</option>
+          <option value="staff">Staff</option>
+          <option value="admin">admin</option>
+          <option value="ceo">CEO</option>
+        </select>
+      </div>
+      <div>
+        <p>Username: {{username}}</p>
+        <p>
+          Hobies:
+          <span v-if="hobies.length > 0">
+            <ul v-for="item in hobies">
+              <li>{{item}}</li>
+            </ul>
+          </span>
+        </p>
+        <p>Role: {{role}}</p>
+      </div>
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            username: "",
+            hobies: [],
+            role: "",
+          };
+        },
+        methods: {},
+      }).mount("#app");
+    </script>
+  </body>
+</html>

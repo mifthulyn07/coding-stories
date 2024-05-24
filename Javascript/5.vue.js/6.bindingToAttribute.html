@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #textkuning {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <a v-bind:href="url">google</a> -->
+      <a :href="url" :id="selectedId">google</a>
+      <img :src="user.image" :alt="user.name" :width="responsiveWidth" />
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            url: "https://google.com",
+            user: {
+              name: "miftah",
+              image:
+                "https://images.unsplash.com/photo-1716369415085-4a6876f91840?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            responsiveWidth: "100px",
+            selectedId: "textkuning",
+          };
+        },
+        methods: {},
+      }).mount("#app");
+    </script>
+  </body>
+</html>

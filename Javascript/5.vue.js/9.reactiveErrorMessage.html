@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>watcher dapat melihat apa yang kita lakuin, lihat di console</p>
+      <input type="text" v-model="message" />
+      <br /><br /><br />
+      <h1>Register</h1>
+      <form action="" method="post" @submit.prevent="">
+        <input type="text" placeholder="Username" v-model="username" /><br />
+        <label style="color: red" v-if="usernameError"
+          >minimal username 8 karakter</label
+        ><br />
+        <input
+          type="password"
+          placeholder="Password"
+          v-model="password"
+        /><br />
+        <label style="color: red" v-if="passwordError"
+          >minimal password 8 karakter</label
+        ><br />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          v-model="passConfirm"
+        />
+        <br />
+        <label style="color: red" v-if="passConfirmError"
+          >Password Confirmation tidak sama dengan password</label
+        ><br />
+        <input type="submit" value="register" />
+      </form>
+    </div>
+
+    <script type="module">
+      // harus ada type module
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        data() {
+          return {
+            message: "",
+            username: "",
+            password: "",
+            passConfirm: "",
+            usernameError: false,
+            passwordError: false,
+            passConfirmError: false,
+          };
+        },
+        watch: {
+          username(value) {
+            if (value.length < 8) {
+              this.usernameError = true;
+            } else {
+              this.usernameError = false;
+            }
+          },
+          password(value) {
+            if (value.length < 8) {
+              this.passwordError = true;
+            } else {
+              this.passwordError = false;
+            }
+          },
+          passConfirm(value) {
+            if (this.password != value) {
+              this.passConfirmError = true;
+            } else {
+              this.passConfirmError = false;
+            }
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
